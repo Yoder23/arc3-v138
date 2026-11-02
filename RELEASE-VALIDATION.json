@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-02T18:04:25.520835+00:00",
+  "passed": true,
+  "source_file_hashes_and_notebook_payload_verified": true,
+  "python_sources": 558,
+  "readable_source_rebuild_zip_byte_identical": true,
+  "compact_notebook_rebuild_byte_identical": true,
+  "policy_initialization": {
+    "source_hashes_verified": true,
+    "policy_initialized": true,
+    "payload_sha256": "b992030ca9dad1998af5f7612f196fa68b58b08c3c40a87411d1c1cbc81623cb",
+    "notebook_sha256": "bda7e4e4d87f0ce5ebb315d794e4c0e99f2738afaddb2eb5483f8da101199b94",
+    "check_only": true,
+    "new_environment_actions": 0,
+    "kaggle_verified": false,
+    "uploaded": false,
+    "scope": "Local source verification; no hidden evaluation claim."
+  },
+  "broken_local_markdown_links": 0,
+  "new_environment_actions": 0,
+  "published_by_this_validation": false,
+  "scope": "Local release verification. Full-suite measurement is the prior frozen V138 validation; no new gameplay or hosted score."
+}

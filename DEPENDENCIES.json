@@ -1,0 +1,92 @@
+{
+  "scope": "Direct source and notebook dependencies; not a complete transitive wheel inventory. No dependency distributions are bundled.",
+  "dependencies": [
+    {
+      "name": "arc-agi",
+      "inspected_version": "0.9.9",
+      "license": "MIT",
+      "role": "Official API client; installed separately.",
+      "distribution_bundled": false,
+      "metadata_sha256": "7adb8d9d26b1fd3f5e5cd68d46188fca23b1236d92cc5c0a94963510ce4aeb98",
+      "notice_files": [
+        "LICENSES/arc-agi.txt"
+      ],
+      "project": "https://pypi.org/project/arc-agi/0.9.9/"
+    },
+    {
+      "name": "arcengine",
+      "inspected_version": "0.9.3",
+      "license": "MIT",
+      "role": "Official action types and local engine; installed separately.",
+      "distribution_bundled": false,
+      "metadata_sha256": "daa4cb74147139e896b7ca4953b2fc5caa3b375b0bc3b89c073db1efa98efd14",
+      "notice_files": [
+        "LICENSES/arcengine.txt"
+      ],
+      "project": "https://pypi.org/project/arcengine/0.9.3/"
+    },
+    {
+      "name": "python-dotenv",
+      "inspected_version": "1.2.4",
+      "license": "BSD-3-Clause",
+      "role": "SDK environment loading; installed separately.",
+      "distribution_bundled": false,
+      "metadata_sha256": "87cfee6042412d48df1100ea7822684988c3f2b79de7a250f4717f4df3026d6f",
+      "notice_files": [
+        "LICENSES/python-dotenv.txt"
+      ],
+      "project": "https://pypi.org/project/python-dotenv/1.2.4/"
+    },
+    {
+      "name": "numpy",
+      "inspected_version": "2.2.6",
+      "license": "BSD-3-Clause",
+      "role": "Policy arrays and numerics; installed separately.",
+      "distribution_bundled": false,
+      "metadata_sha256": "229f3544b02805e0f6a12030e155d8a45fd3a4100b3291574175e6a76f20e1e1",
+      "notice_files": [
+        "LICENSES/numpy.txt"
+      ],
+      "project": "https://pypi.org/project/numpy/2.2.6/"
+    },
+    {
+      "name": "scipy",
+      "inspected_version": "1.15.3",
+      "license": "BSD-3-Clause",
+      "role": "Policy image/object operations; installed separately.",
+      "distribution_bundled": false,
+      "metadata_sha256": "191610381f06190f11ec2c5cd46f1a7833665d8386d3fe8a710c07ef65acdfd4",
+      "notice_files": [
+        "LICENSES/scipy.txt"
+      ],
+      "project": "https://pypi.org/project/scipy/1.15.3/"
+    },
+    {
+      "name": "torch",
+      "inspected_version": "2.7.1+cu118",
+      "license": "BSD-3-Clause",
+      "role": "Optional inactive research arm. Not required by the qualified selective policy.",
+      "distribution_bundled": false,
+      "metadata_sha256": "8bdaf07087d52e1448acca4c89fbd4498666c1f8ee9386c7e36ec713c91394e7",
+      "notice_files": [
+        "LICENSES/torch-0.txt",
+        "LICENSES/torch-1.txt"
+      ],
+      "project": "https://pypi.org/project/torch/2.7.1/"
+    },
+    {
+      "name": "pandas",
+      "inspected_version": "3.0.1",
+      "license": "BSD-3-Clause",
+      "role": "Notebook commit-mode Parquet fixture; installed separately; hosted version not recorded.",
+      "distribution_bundled": false,
+      "metadata_sha256": "1abad8d16d49ed4ec435cf030c8630315a8d50d29a880a224e121ea2957dbd05",
+      "notice_files": [
+        "LICENSES/pandas.txt"
+      ],
+      "project": "https://pypi.org/project/pandas/3.0.1/"
+    }
+  ],
+  "parquet_engine": "A pandas-compatible engine is supplied by the Kaggle runtime; its exact distribution/version is not recorded. No engine binaries are bundled.",
+  "python": "Standard library under Python Software Foundation terms, supplied separately."
+}

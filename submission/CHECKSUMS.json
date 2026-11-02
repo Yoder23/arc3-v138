@@ -1,0 +1,42 @@
+{
+  "kernel-metadata.template.json": {
+    "sha256": "e27da494b022cd439b3069213f131cdd9e5ef7b32c38e63e86a8922161949ada",
+    "bytes": 424
+  },
+  "PACKAGING-CORRECTION.txt": {
+    "sha256": "cc37ce70739b75c7099cf9824ab12828010b4de5c4ced2ab9a52086cc2b08ff1",
+    "bytes": 1031
+  },
+  "policy-package.zip": {
+    "sha256": "b992030ca9dad1998af5f7612f196fa68b58b08c3c40a87411d1c1cbc81623cb",
+    "bytes": 848122
+  },
+  "READINESS.json": {
+    "sha256": "889ce196b99e59a179b02c9380ad5e83286b7d007eb80da6dcf65e3e4c63575e",
+    "bytes": 1153
+  },
+  "README.txt": {
+    "sha256": "1deabf5ffc61d981dfae84075d12092ef4c38885a577bc2760166531406ef868",
+    "bytes": 4801
+  },
+  "requirements.txt": {
+    "sha256": "5ee451acbe630fabf0455a912392a31fb23485b1523f1fd2d365a52e9a949ddd",
+    "bytes": 45
+  },
+  "RUNTIME-PINS.json": {
+    "sha256": "e1849a2b25f02bf22f100ef2bfe36e50531f04b83efb29c537737d21293f9f1e",
+    "bytes": 1841
+  },
+  "submission.ipynb": {
+    "sha256": "bda7e4e4d87f0ce5ebb315d794e4c0e99f2738afaddb2eb5483f8da101199b94",
+    "bytes": 959128
+  },
+  "VALIDATION-SUMMARY.json": {
+    "sha256": "f61340b47183143f936654b7c83ad02d5dd1a0e89d182cab988b26df4f88dfd8",
+    "bytes": 903
+  },
+  "verify_local.py": {
+    "sha256": "bbb33bed792b891d9d5dfb70e4c4daa95ae592201eb12065a0bfded35806b82e",
+    "bytes": 5638
+  }
+}

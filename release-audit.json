@@ -1,0 +1,14 @@
+{
+  "source_provenance_matches": 558,
+  "source_files_match_frozen_zip": true,
+  "policy_zip_unchanged": true,
+  "compact_notebook_unchanged": true,
+  "report_pdf_unchanged": true,
+  "credential_pattern_scan_matches": [],
+  "known_gateway_test_value_reviewed": true,
+  "benchmark_traces_bundled": false,
+  "game_implementations_bundled": false,
+  "dependency_distributions_bundled": false,
+  "new_environment_actions": 0,
+  "review_scope": "Pinned file equality, source notice/import inventory, explicit publication allowlist and credential/path patterns. Not a guarantee against all copyright or security issues."
+}

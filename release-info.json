@@ -1,0 +1,22 @@
+{
+  "version": "V138",
+  "author": "Yoder23",
+  "date": "2026-11-02",
+  "project_license": "MIT-0",
+  "local_public_RHAE": 76.99252294322464,
+  "levels": 153,
+  "total_levels": 183,
+  "wins": 16,
+  "games": 25,
+  "environment_actions": 7585,
+  "cached_responses": 0,
+  "source_python_files": 558,
+  "notebook_sha256": "bda7e4e4d87f0ce5ebb315d794e4c0e99f2738afaddb2eb5483f8da101199b94",
+  "policy_zip_sha256": "b992030ca9dad1998af5f7612f196fa68b58b08c3c40a87411d1c1cbc81623cb",
+  "scope": "Adaptive local public development, not held-out performance.",
+  "kaggle_commit_run": "Reported complete by author; logs not independently reviewed.",
+  "kaggle_competition_submission": "Not yet made, per author.",
+  "kaggle_score": null,
+  "eligibility_certified": false,
+  "source_release_license_supersedes_historical_pending_manifest": true
+}

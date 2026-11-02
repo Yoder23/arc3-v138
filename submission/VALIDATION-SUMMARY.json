@@ -1,0 +1,20 @@
+{
+  "candidate": "V138",
+  "scope": "Adaptive local public evaluation; not a Kaggle or hidden result.",
+  "passed": true,
+  "uncached_actions": 7585,
+  "games": 25,
+  "fresh_local_RHAE": 76.99252294322464,
+  "levels": 153,
+  "total_levels": 183,
+  "wins": 16,
+  "all_action_response_outcomes_exact": true,
+  "source_runtime_unchanged": true,
+  "cached_policy_responses": 0,
+  "kaggle_verified": false,
+  "source_validation_sha256": "137655f56da5a714408e77c8429baae1025b511df4133499e1bbdc0874348774",
+  "original_archive_sha256": "aa0fd58414e410e669a8f74de1b5b60b216065a548510395edc172ffaee4fe08",
+  "notebook_sha256": "e29cb39ca485a5d0efcaf6f63b3122eaeabfbe80f0079aabb383e1def78087a3",
+  "payload_sha256": "b992030ca9dad1998af5f7612f196fa68b58b08c3c40a87411d1c1cbc81623cb",
+  "v139_excluded": "Full-suite validation failed when disk space was exhausted. No completed validation report; not promoted."
+}

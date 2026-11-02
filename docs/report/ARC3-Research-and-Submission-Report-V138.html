@@ -1,0 +1,302 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ARC AGI 3 Research and Submission Report</title><style>body{font-family:Arial,sans-serif;color:#111;max-width:960px;margin:40px auto;padding:0 28px;line-height:1.55}h1,h2,h3{color:#000}h1{font-size:30px}h2{font-size:25px}h3{font-size:17px;margin-top:24px}section{margin-bottom:58px}table{border-collapse:collapse;width:100%;margin:20px 0}th,td{border:1px solid #d9d9d9;padding:10px 12px;text-align:left}th{background:#23384d;color:white}tr:nth-child(even){background:#f1f4f7}.note{font-size:13px;color:#454545;overflow-wrap:anywhere}.subtitle{font-size:20px}.editable{font-size:13px;color:#555}@media print{body{margin:0;max-width:none}section{break-before:page}section:first-of-type{break-before:auto}.editable{display:none}}</style></head><body><p class="editable">Editable HTML source. Revise this file in a text or HTML editor. The PDF is the reviewed fixed-layout edition.</p><main>
+<section><h1>ARC AGI 3 Research and Submission Report</h1>
+<p class="subtitle">Retained learning and validated public performance for V138</p>
+<p>November 2 2026 | Research closeout and submission companion</p>
+<h3>Executive summary</h3>
+<p>We developed an interactive puzzle-solving system around a repeated cycle of observation, hypothesis formation, action, failure analysis and retained knowledge. The strongest completed candidate is V138. It achieved 76.9925 out of 100 on the local public ARC-AGI-3 evaluation, completing 153 of 183 levels and winning 16 of 25 games. The final validation executed 7,585 fresh actions with zero cached policy responses. [S01]</p>
+<table><thead><tr><th>Measure</th><th>Verified result</th></tr></thead><tbody>
+<tr><td>Local public RHAE</td><td>76.9925 / 100</td></tr>
+<tr><td>Completed levels</td><td>153 / 183  |  83.61%</td></tr>
+<tr><td>Complete game wins</td><td>16 / 25  |  64.00%</td></tr>
+<tr><td>Fresh validation actions</td><td>7,585</td></tr>
+<tr><td>Cached policy responses</td><td>0</td></tr>
+<tr><td>Kaggle and hidden evaluation</td><td>Unverified</td></tr>
+</tbody></table>
+<p>The engineering contribution is a portfolio of observation-driven controllers with retained evidence, bounded planning and explicit checks that new behavior preserves earlier skills. Public gains were accepted through fresh replay, evidence audits and complete uncached evaluation. The score is a local action-efficiency measure; it is neither the fraction of levels completed nor the fraction of games won. [S01, S08, S12]</p>
+<p>The original research direction emphasized human-like learning, associative memory and neuromorphic mechanisms. Early experiments implemented and compared neural variants. Those controls did not establish a general advantage for spiking or liquid-inspired models. The final result should be attributed to the tested system as a whole, with its concrete memory and planning mechanisms, rather than to a claim of brain emulation. [S03-S07]</p>
+<h3>Delivery decision</h3>
+<p>V138 is frozen and packaged for the user to upload. V139 remains research-only because its full 25-game validation failed when disk space was exhausted. The user requested immediate packaging; research was stopped and its scheduled automation deleted. No upload, hosted run, publication or competition submission was performed. Kaggle/Linux compatibility, official hardware execution and hidden performance remain unverified. [S02, S19, S20]</p>
+<p class="note">This report explains the research method, implemented architecture, positive and negative experiments, validation evidence, limitations and submission procedure. It accompanies the frozen package and does not change its code.</p>
+</section>
+<section><h2>Research objective and the simulation program</h2>
+<p>The project began from the hypothesis that an effective puzzle agent should behave more like a persistent scientist: accumulate experience, make explicit predictions, test alternatives, recognize contradictions and carry useful knowledge into later attempts. Human-like learning was treated as a source of engineering hypotheses. Success required measured transfer and retention, not an architectural label.</p>
+<h3>What the early simulations tested</h3>
+<p>N1 compared a conventional gated recurrent unit, an adaptive-time-constant recurrent model and a spiking leaky integrate-and-fire model on next-position prediction. Training used 128 generated worlds with 96 steps each, three seeds per family, and four held-out conditions. The adaptive model was modestly better in some conditions; the GRU led on unfamiliar dynamics. The spiking model lagged under this protocol. Neither neural alternative passed its promotion gate, and no memory ablation passed its gate. [S03]</p>
+<p>N2B tested longer schooling and a zero-prior control. Short driven learning solved 815/864 synthetic instances; extended driven learning solved 808/864; the zero-prior agent, which retained memory, planning and appraisal, solved 816/864. This result made it important to separate the value of external memory and planning from the value of a learned neural prior. These were synthetic mechanics tests, not ARC scores. [S04]</p>
+<h3>Executable knowledge rather than a general education claim</h3>
+<p>N3 used a supplied interpreter with 357 rule templates, associative retrieval and recurrent revision of hypotheses. A second round of practice was selected using development failures. The neural hybrid included surrogate-gradient spikes and a liquid-inspired recurrent state; it was not a biological brain model. N3B changed the representation by adding object-role position statistics, but its retention gate failed despite improved aggregate school performance. [S05]</p>
+<p>N4 expanded the executable vocabulary by 200 hypotheses across 18 lesson families, including rigid motion, cavity operations, propagation, periodic completion and conditional transforms. GRU and hybrid variants both solved 909/972 new-skill school instances and 22/400 public ARC-1 tasks. Both scored 0/55 queries on an independent ARC check. A broader curriculum helped taught mechanisms without establishing broad ARC generalization or a neural-cell advantage. [S06]</p>
+<p class="note">The simulations were bounded grid and mechanics curricula. They did not implement a complete Earth simulator, university education, subjective emotion, whole-brain emulation or unrestricted invention of new concepts. These remain research ambitions rather than delivered capabilities.</p>
+</section>
+<section><h2>The submission system architecture</h2>
+<p>V138 is a fixed source package whose policy adapts its internal state while interacting with a game. A sequential driver starts a fresh policy process for each game and passes only the allowed observation fields: current frame, animation frames, state, available actions and completed-level count. The driver uses game identifiers for environment management and reporting; the policy interface does not receive them. [S08]</p>
+<h3>Observable routing and preserved experts</h3>
+<p>An admission controller inspects the visible scene and available controls once, then selects an eligible specialist or the preserved parent policy. This is an engineered portfolio of controllers, not evidence that a concurrent LLM swarm solved the benchmark. It keeps successful earlier behavior available while adding narrowly qualified abilities. Scene-based specialization can still overfit public game families, even without receiving their identifiers. [S08]</p>
+<table><thead><tr><th>Specialist route</th><th>Main responsibility</th></tr></thead><tbody>
+<tr><td>Animated switch</td><td>Control effects and timing in animated navigation</td></tr>
+<tr><td>Coupled marker</td><td>Joint marker alignment</td></tr>
+<tr><td>Directional encounter</td><td>Position-dependent movement interactions</td></tr>
+<tr><td>Beam split</td><td>Beam geometry and goal assignment</td></tr>
+<tr><td>Key glyph</td><td>Visible symbols and control interpretation</td></tr>
+<tr><td>Carry material</td><td>Material transport and transfer</td></tr>
+<tr><td>Viewport peg</td><td>Cooperative motion and viewport reasoning</td></tr>
+<tr><td>Measured waypoint</td><td>Observed movement range and intermediate positions</td></tr>
+<tr><td>Binary temporal</td><td>Temporal fields, command programs and checkpoint persistence</td></tr>
+<tr><td>Preserved parent</td><td>Previously qualified skills outside new admissions</td></tr>
+</tbody></table>
+<h3>Action and observation loop</h3>
+<p>Observe the visible scene; retrieve supported knowledge; propose a bounded action or program; execute through the environment; compare predicted and observed effects; retain the outcome; revise or stop when the model is refuted or its budget is exhausted. Different specialists implement different parts of this cycle. A failed probe is useful only when its result changes a later hypothesis or plan.</p>
+<p>The delivered policy uses CPU execution. Optional Torch imports were blocked throughout V138 qualification, and this phase made no LLM calls. Earlier neural research remains part of the research record, but the V138 score is not evidence that a large language model or neuromorphic accelerator produced the measured gain. [S09, S12, S20]</p>
+</section>
+<section><h2>Retained knowledge and recursive learning</h2>
+<h3>Three distinct forms of memory</h3>
+<p>Within an episode, the learner retains observed control effects, earlier goal evidence, failed actions, field phases and outcomes of submitted plans. Across levels in a game, specialists can retrieve previously observed mechanisms, such as a control mapping or a patterned tile that preserves an intermediate position. Across research iterations, an external catalog preserves source pins, evidence, failed hypotheses and promotion decisions. These three forms of memory should not be conflated. [S09, S12]</p>
+<p>The latest closed catalog contains 552 entries. They include research findings, negative results, audits, qualification records and delivery records; the number is not a count of 552 independently learned universal skills. The catalog and game-keyed failure index support research continuity. The submission carries executable policy source, not the full experiment archive or benchmark response traces. [S09, S18]</p>
+<h3>How failures become usable evidence</h3>
+<p>A useful retained record connects a claim to the observation and action that support it. For example, a predicted stopping position is kept distinct from the actual post-action position. A checkpoint rule is linked to a prior visible motif and observed persistence. A refuted prediction remains a counterexample rather than being silently replaced with the intended result. Independent audit code tests whether these source bindings survive tampering. [S12, S13]</p>
+<p>The V138 checkpoint extension copies the prior field model, known effects and failed-stop evidence before taking control. It records a semantic digest of the paused predecessor and asserts that the predecessor remains unchanged. It checks actual positions and level progress after submission, and stops on a refuted checkpoint or temporal prediction. It also bounds further attempts. This makes retention an executable property of the controller rather than a narrative promise. [S12]</p>
+<h3>What recursive learning means here</h3>
+<p>At runtime, recursion means revisiting hypotheses after an observed error and using retained knowledge to construct a different plan. In the research workflow, it means selecting the next intervention from a diagnosed failure, testing it, and admitting it only after regression and whole-suite checks. Human direction and Codex-assisted engineering designed representations, curricula, code and experiments. The system did not autonomously invent the entire architecture or conduct unrestricted self-improvement.</p>
+<p class="note">The checkpoint records 178,022 completed environment actions through its closed studies. This is a research-accounting total, not the cost of the final 7,585-action validation. Later partial V139 actions are not a completed evaluation and must not be added as an exact completed-run count. [S02, S09]</p>
+</section>
+<section><h2>Controlled evidence for retention and transfer</h2>
+<h3>Remembering joint goals after failure</h3>
+<p>A confirmation study used 16 reserved authored cases: eight joint-track goals and eight single-track regressions. Palettes, layouts, control directions and rotations varied. Forced failure erased visible goal information, making retention testable. The retained-memory treatment solved all 16 cases, compared with nine for the prior controller and zero for the forgetting control. All arms were executed and freshly replayed. [S10]</p>
+<table><thead><tr><th>Authored condition</th><th>Wins</th><th>Actions</th></tr></thead><tbody>
+<tr><td>Prior controller</td><td>9 / 16</td><td>456</td></tr>
+<tr><td>Retain goal and action evidence</td><td>16 / 16</td><td>186</td></tr>
+<tr><td>Forget retained evidence</td><td>0 / 16</td><td>62</td></tr>
+</tbody></table>
+<p>The treatment gained seven cases with no paired losses. The forgetting control used fewer actions because it failed early, illustrating why lower action counts alone are not a success metric. A separate public diagnostic reached two levels in 128 actions with exact replay. The authored result supports a mechanism-specific transfer claim, not a public score or a human-equivalence claim. [S10]</p>
+<h3>Reusing learned controls in reflection tasks</h3>
+<p>A separate sparse-reflection study varied palettes, shapes, layouts and control orientation across eight authored lessons. Retained control retrieval required 354 actions, compared with 378 when retrieval was ablated, saving 24 actions. The study included exact replay, semantic memory handoffs and rejection of seven forged evidence variants. It isolates a benefit from control retrieval under those conditions; it does not establish general transfer across arbitrary games. [S11]</p>
+<h3>A counterfactual check on the final checkpoint learner</h3>
+<p>On the same adaptive public scene used for the V138 checkpoint improvement, the full memory supported a three-segment route. Removing checkpoint memory eliminated the route. Removing temporal memory reconstructed a program already observed to fail. A conservative alternative update order also found no route. These are offline counterfactual planning checks with zero new game actions, not fresh behavioral trials or a held-out generalization estimate. [S13]</p>
+<p class="note">Evidence strength differs by study. Authored control comparisons, public development successes, offline memory ablations and complete public-suite evaluation answer different questions. The report keeps those denominators and scopes separate.</p>
+</section>
+<section><h2>Case study in learning from a failed approach</h2>
+<h3>From temporal prediction to checkpoint transfer</h3>
+<p>The final V138 improvement concerned a binary command and temporal-field task. Earlier attempts supplied evidence about control effects, changing obstruction fields and ordinary stopping positions that failed. The extension retrieved patterned-tile persistence from earlier levels and searched for a route through intermediate checkpoints instead of assuming that every intended stop would survive. [S12]</p>
+<p>The agent formed a program from the visible control geometry, submitted it, compared the actual endpoint with the predicted endpoint, and retained the outcome. A checkpoint could be treated as useful only when linked to prior observations. The resulting public study won all seven levels in 190 actions; a fresh replay matched the actions and outcomes. The final full-suite V138 run then reproduced that result as part of all 25 games. [S01, S12]</p>
+<table><thead><tr><th>Qualification property</th><th>Recorded evidence</th></tr></thead><tbody>
+<tr><td>Public action sequence checked</td><td>190 actions</td></tr>
+<tr><td>Memory handoffs checked</td><td>28</td></tr>
+<tr><td>Parent preservation checks</td><td>191</td></tr>
+<tr><td>Forged evidence variants rejected</td><td>9</td></tr>
+<tr><td>Checkpoint rules retained</td><td>1</td></tr>
+<tr><td>Failed stops retained</td><td>1</td></tr>
+<tr><td>Observed checkpoint outcomes</td><td>3</td></tr>
+</tbody></table>
+<p>The evidence audit rejected alterations to checkpoint outcome, motif, source, known effect, obstruction, phase source, predicted endpoint, failed stop and source binding. The complete suite score increased from 75.9925 in V137 to 76.9925 in V138, with one additional level and one additional complete game. [S01, S12, S17]</p>
+<h3>Why the faster follow up was not submitted</h3>
+<p>A later experiment reused the failed execution more directly. It preserved the first 130 actions and complete responses, then won the same seven-level game in 160 actions. Fresh replay matched, saving 30 actions, or 15.79%, relative to the 190-action version. This was a valid single-game efficiency result with 23 memory handoffs per run. It was not a measured whole-suite score gain. [S14]</p>
+<p>That experiment became the V139 proposal. Its preparation, qualification and build stages passed, but full-suite validation failed during disk exhaustion. No completed validation report exists for V139. The immediate handoff therefore retained V138. This decision preserved a verified result rather than treating a promising partial run as a finished candidate. [S02, S14]</p>
+</section>
+<section><h2>Goal interpretation and interaction coverage</h2>
+<h3>Goals require tested semantics</h3>
+<p>The research repeatedly encountered scenes where the geometry was visible but its meaning was uncertain. A target might require exact reproduction, coverage of positive marks, simultaneous satisfaction of several positions, or an intermediate state that enables a later action. More search under an incorrect goal interpretation can repeatedly produce the same failure. The retained catalog records alternative hypotheses and the observations that supported or refuted them. [S09]</p>
+<p>Reflection work moved from matching complete goal templates toward testing whether visible target marks could be covered while extra reflected pixels remained. Additional repairs separated viewport borders before segmentation and retained evidence about partly occluded axes. Sparse-goal tests then checked reachability and object identity under changed layouts and controls. Several earlier click, visibility and identity-probe hypotheses completed no new levels and remained recorded as negative results. [S09, S11, S15]</p>
+<h3>Transferring a deformation mechanism</h3>
+<p>Rectangle work retained an inferred deformation mechanism and its controls, then applied them to two rectangles with changed goal shapes and paint layouts. The public development record completed the eighth level in 748 total actions. Parsing clipped paint pads mattered to this transfer. This is evidence for that observed mechanism and tested layouts; it is not a proof that arbitrary shape transformations are covered. [S09, S15]</p>
+<h3>Conditional motion and the edge of the viewport</h3>
+<p>A carrier-motion review reproduced 20 of 23 retained transition predictions exactly. The three exceptions involved boundary visibility: a predicted object could be absent, or an object could reappear unexpectedly. The next proposed experiment concerned persistence after disappearance and a lateral action while off-screen. Hidden positions were explicitly labeled hypotheses, not observations. [S16]</p>
+<p>The carrier-prefix qualification preserved 549 previous actions, checked 80 memory handoffs and 549 parent states, and retained 329 motion records. That established a safe continuation point for a discriminating experiment. It did not establish a new public win. The queued public study was stopped when the user requested immediate packaging. [S02, S16]</p>
+<p class="note">The common lesson is to improve the representation and test the uncertain interaction before broadening the planner. Goal semantics, timing and visibility errors are different failure classes; they require different interventions.</p>
+</section>
+<section><h2>Verified public progress</h2>
+<p>Each row below is a separate frozen candidate with a complete local public readiness record. The values are not assembled from the best game result of different versions. Repeated development on these public games makes the series adaptive; it is not an unbiased estimate on unseen games. [S17]</p>
+<table><thead><tr><th>Candidate</th><th>RHAE / 100</th><th>Levels / 183</th><th>Wins / 25</th><th>Actions</th></tr></thead><tbody>
+<tr><td>V114</td><td>54.3301</td><td>111</td><td>12</td><td>11,850</td></tr>
+<tr><td>V116</td><td>56.4730</td><td>116</td><td>12</td><td>10,920</td></tr>
+<tr><td>V117</td><td>57.3301</td><td>117</td><td>12</td><td>10,956</td></tr>
+<tr><td>V118</td><td>57.7587</td><td>119</td><td>12</td><td>10,121</td></tr>
+<tr><td>V121</td><td>67.8031</td><td>136</td><td>13</td><td>7,883</td></tr>
+<tr><td>V122</td><td>69.5128</td><td>141</td><td>13</td><td>6,484</td></tr>
+<tr><td>V123</td><td>70.3855</td><td>144</td><td>13</td><td>6,679</td></tr>
+<tr><td>V124</td><td>70.7535</td><td>145</td><td>13</td><td>6,972</td></tr>
+<tr><td>V125</td><td>70.8592</td><td>146</td><td>13</td><td>7,141</td></tr>
+<tr><td>V126</td><td>71.8592</td><td>147</td><td>14</td><td>7,100</td></tr>
+<tr><td>V128</td><td>72.9084</td><td>148</td><td>14</td><td>7,305</td></tr>
+<tr><td>V130</td><td>75.0471</td><td>150</td><td>15</td><td>7,246</td></tr>
+<tr><td>V132</td><td>75.0471</td><td>150</td><td>15</td><td>7,229</td></tr>
+<tr><td>V134</td><td>75.4834</td><td>151</td><td>15</td><td>7,385</td></tr>
+<tr><td>V137</td><td>75.9925</td><td>152</td><td>15</td><td>7,525</td></tr>
+<tr><td>V138</td><td>76.9925</td><td>153</td><td>16</td><td>7,585</td></tr>
+</tbody></table>
+<h3>What improved</h3>
+<p>From V114 to V138, the local public score rose by 22.6624 points, completed levels rose from 111 to 153, and complete wins rose from 12 to 16. The final run used 4,265 fewer actions, although the policies and stopping behavior changed, so action reduction alone should not be treated as a controlled causal comparison. [S01, S17]</p>
+<p>V121 contributed a large measured step over V118: 17 more completed levels and 10.0444 score points. Later gains were smaller and more targeted. V132 reduced actions relative to V130 without changing the reported score, levels or wins. V130 first exceeded 75 points in this series; V138 improved that result further, but the 100-point objective remained unmet. [S17]</p>
+<p class="note">The local score and the public leaderboard are separate measurements. This report makes no claim that the candidate leads a competition or will win its hidden evaluation.</p>
+</section>
+<section><h2>The final 25 game evaluation</h2>
+<p>The V138 run covered every public game in the pinned local inventory. Sixteen games ended in a win; nine ended when the policy stopped. The run reported no runtime errors or external time-limit outcomes. The stopping games remain incomplete even when several of their levels were solved. [S01]</p>
+<table><thead><tr><th>Public game</th><th>Levels solved</th><th>Actions</th><th>Outcome</th></tr></thead><tbody>
+<tr><td>ar25-0c556536</td><td>8</td><td>302</td><td>Win</td></tr>
+<tr><td>bp35-0a0ad940</td><td>2</td><td>180</td><td>Policy stopped</td></tr>
+<tr><td>cd82-fb555c5d</td><td>6</td><td>117</td><td>Win</td></tr>
+<tr><td>cn04-2fe56bfb</td><td>6</td><td>383</td><td>Win</td></tr>
+<tr><td>dc22-fdcac232</td><td>4</td><td>341</td><td>Policy stopped</td></tr>
+<tr><td>ft09-0d8bbf25</td><td>6</td><td>125</td><td>Win</td></tr>
+<tr><td>g50t-5849a774</td><td>7</td><td>342</td><td>Win</td></tr>
+<tr><td>ka59-38d34dbb</td><td>5</td><td>370</td><td>Policy stopped</td></tr>
+<tr><td>lf52-271a04aa</td><td>7</td><td>520</td><td>Policy stopped</td></tr>
+<tr><td>lp85-305b61c3</td><td>8</td><td>215</td><td>Win</td></tr>
+<tr><td>ls20-9607627b</td><td>6</td><td>712</td><td>Policy stopped</td></tr>
+<tr><td>m0r0-492f87ba</td><td>6</td><td>338</td><td>Win</td></tr>
+<tr><td>r11l-495a7899</td><td>6</td><td>164</td><td>Win</td></tr>
+<tr><td>re86-8af5384d</td><td>8</td><td>748</td><td>Win</td></tr>
+<tr><td>s5i5-18d95033</td><td>8</td><td>373</td><td>Win</td></tr>
+<tr><td>sb26-7fbdac44</td><td>8</td><td>124</td><td>Win</td></tr>
+<tr><td>sc25-635fd71a</td><td>6</td><td>264</td><td>Win</td></tr>
+<tr><td>sk48-d8078629</td><td>4</td><td>142</td><td>Policy stopped</td></tr>
+<tr><td>sp80-589a99af</td><td>6</td><td>207</td><td>Win</td></tr>
+<tr><td>su15-1944f8ab</td><td>5</td><td>303</td><td>Policy stopped</td></tr>
+<tr><td>tn36-ef4dde99</td><td>7</td><td>190</td><td>Win</td></tr>
+<tr><td>tr87-cd924810</td><td>6</td><td>316</td><td>Win</td></tr>
+<tr><td>tu93-0768757b</td><td>8</td><td>265</td><td>Policy stopped</td></tr>
+<tr><td>vc33-5430563c</td><td>7</td><td>314</td><td>Win</td></tr>
+<tr><td>wa30-ee6fef47</td><td>3</td><td>230</td><td>Policy stopped</td></tr>
+</tbody></table>
+<p class="note">Total: 153 levels completed, 16 game wins and 7,585 actions. All 183 levels remain in the aggregate denominator. Per-game counts are outcome summaries; no action sequence, response trace or answer file is included in this report.</p>
+</section>
+<section><h2>Validation and experimental discipline</h2>
+<h3>A promotion sequence with explicit gates</h3>
+<p>The final sprint required legal observations, retained failure evidence, exact fresh replay for an actual gain, preservation of earlier state and full uncached validation over all 25 games before promotion. The policy was frozen for a validation run. Source and runtime fingerprints were checked so a measured result could be tied to the delivered bytes. [S01, S18, S22]</p>
+<p>A narrow experiment first tested a specific intervention. Qualification then checked prior action behavior, memory handoffs and evidence certificates, including intentionally forged variants. Successful public changes were replayed in fresh environments. The composed candidate was finally run through the full suite, with action, response and outcome comparisons. These checks support reproducibility and retention; they do not remove prior public-data exposure. [S01, S12]</p>
+<h3>What was verified for V138</h3>
+<table><thead><tr><th>Check</th><th>Result</th></tr></thead><tbody>
+<tr><td>All 25 games evaluated uncached</td><td>Passed</td></tr>
+<tr><td>Action response and outcome comparisons</td><td>All exact</td></tr>
+<tr><td>Source and runtime unchanged</td><td>Passed</td></tr>
+<tr><td>Expected package members and source syntax</td><td>Passed</td></tr>
+<tr><td>Benchmark response files in policy package</td><td>0</td></tr>
+<tr><td>Fresh final initialization check</td><td>Passed with 0 game actions</td></tr>
+<tr><td>Kaggle Linux and official hardware run</td><td>Not performed</td></tr>
+</tbody></table>
+<p>The local validation took about 1,335.61 seconds, or 22.3 minutes, in the recorded Windows environment. Its owned-process receipt recorded completed cleanup. The final delivery check independently verified source hashes and initialized the guarded policy; it did not rerun games or create a new score. The package audit recorded 558 source-package members, including 557 under its policy-file count, and zero benchmark response files. [S01, S18, S19, S21]</p>
+<h3>Interpretation safeguards</h3>
+<p>A fresh replay is a new execution, not a hidden or previously untouched test set. Exact reproduction says the recorded behavior can be repeated under pinned conditions. It does not establish robustness to all seeds, operating systems, altered game rules or unfamiliar visual structures. Likewise, an offline ablation reveals what a planner uses in a retained scene; it is not equivalent to a fresh randomized behavioral experiment.</p>
+<p class="note">Earlier transfer work discovered overlap between confirmation and development pools and withdrew the corresponding independence claim. The corrected independent check did not reproduce the apparent gain. Keeping that correction visible is part of the research record. [S07]</p>
+</section>
+<section><h2>Reproducibility and the submission handoff</h2>
+<h3>The frozen artifact</h3>
+<p>The submission notebook embeds the policy source archive and verifies its SHA-256 before extraction. The separate policy ZIP is an inspectable copy of those same bytes. The handoff also contains requirements, optional private-notebook metadata, readiness and validation summaries, runtime pins, checksums and a local verifier. It excludes benchmark traces, response caches, game implementations, private credentials and answer files. [S18, S20]</p>
+<table><thead><tr><th>Locally tested component</th><th>Version or condition</th></tr></thead><tbody>
+<tr><td>Coordinator Python</td><td>3.12.14</td></tr>
+<tr><td>Policy Python</td><td>3.10.0</td></tr>
+<tr><td>NumPy</td><td>2.2.6</td></tr>
+<tr><td>SciPy</td><td>1.15.3</td></tr>
+<tr><td>ARC SDK distribution</td><td>arc-agi 0.9.9</td></tr>
+<tr><td>Game engine distribution</td><td>arcengine 0.9.3</td></tr>
+<tr><td>Execution</td><td>Windows CPU; optional Torch unused</td></tr>
+</tbody></table>
+<p>These are local evidence pins, not proof that the Kaggle runtime has identical dependencies. The notebook installs official wheels offline and checks NumPy/SciPy imports and policy initialization. It sets CPU execution and single-thread numerical-library limits in the policy process. Configured budgets are 1,024 actions per game, 600 wall seconds per game, 28,800 internal run seconds, and a guarded policy budget of 600 CPU seconds and 2 GiB. [S08, S20]</p>
+<h3>User submission procedure</h3>
+<p>Import submission.ipynb as a private competition notebook, attach the competition data, select CPU and keep Internet off. Save and run all cells; inspect initialization logs. The ordinary commit run creates an explicitly unscored submission.parquet schema fixture. During competition rerun, the notebook waits for the official gateway and runs the agent; the gateway produces the actual evaluation result. The fixture is not a benchmark score. [S20]</p>
+<h3>Integrity identifiers</h3>
+<p class="note">Notebook SHA256  e29cb39ca485a5d0efcaf6f63b3122eaeabfbe80f0079aabb383e1def78087a3</p>
+<p class="note">Policy archive SHA256  b992030ca9dad1998af5f7612f196fa68b58b08c3c40a87411d1c1cbc81623cb</p>
+<p class="note">Submission handoff ZIP SHA256  47d18d614f405882a0660d1cf4e6aa78d943439384e2b91990a6a6d235ec3ae1</p>
+<p class="note">The notebook deployment contract was checked against official starter commit eeb1535404f321d280a8f9194bbc1d7aca5f05fc. Hosted initialization and submission acceptance remain user-side checks. This report does not claim a new verification of current platform rules. [S20]</p>
+</section>
+<section><h2>Limitations and conclusions</h2>
+<h3>What the results support</h3>
+<p>The project demonstrated that selected forms of retained evidence can improve specific planning and control tasks. Authored controls showed benefits from retaining goals and learned controls. Public case studies showed an agent using prior effects, temporal observations and checkpoint persistence to complete later tasks. Complete frozen-candidate validation established the final local score and preserved prior behavior. The supported conclusion is practical and bounded: carefully represented experience can make a puzzle agent more effective. [S01, S10-S13]</p>
+<h3>What remains unresolved</h3>
+<p>Public games were repeatedly used to diagnose failures and guide interventions. The controller portfolio contains substantial engineered visual and procedural knowledge. Hidden-game generalization is therefore unknown. The final local run leaves 30 levels and nine full games unfinished; the 100-point objective was not reached. A fixed-seed replay cannot establish robustness across different seeds, renderings, action mappings or timing behavior. [S01, S08]</p>
+<p>The experiments do not establish human-level reasoning, brain equivalence, emotion, a general neuromorphic advantage or the necessity of a particular neuron model. Earlier school gains often exceeded public transfer, and some apparent improvements failed retention or independence checks. The strongest final result was qualified without optional Torch imports and without LLM calls. These facts should remain explicit in any competition write-up or public description. [S03-S07, S12]</p>
+<h3>Recommended research after the submission</h3>
+<p>First, establish operational reliability on the official runtime and separately measure hidden or genuinely reserved tasks. Second, preregister transfer tests that change visual appearance, action mapping, object count and interaction rules while holding budgets fixed. Third, test missing roles, off-screen persistence and conditional motion using competing predictions with an observable discriminating action. Fourth, compare memory and planning ablations at matched compute, and measure both new gains and regressions.</p>
+<p>Any renewed neuromorphic study should compare against a strong conventional recurrent control using matched data, capacity where feasible, compute and action budgets. The outcome should be a prospective task or transfer gain, not simply a different internal state representation. Broader simulation knowledge is valuable only when its effect survives that evaluation.</p>
+<h3>Closeout</h3>
+<p>The user selected immediate delivery. V138, older verified candidates and retained research knowledge were preserved; V139 was not promoted; scheduled research was stopped. The report and its evidence index add documentation without modifying the frozen submission. The next operational decision is the user-side Kaggle initialization and submission workflow. [S02]</p>
+</section>
+<section><h2>Evidence register</h2>
+<p>Source identifiers refer to local research artifacts. The accompanying evidence index records every referenced path, SHA-256 and byte count. It contains provenance metadata only; raw experiments and benchmark traces remain outside the delivery.</p>
+<h3>S01 V138 final validation and measured run</h3>
+<p>All 25 games, score, levels, wins, actions, exact comparisons and measured runtime.</p>
+<p class="note">outputs/arc3-kaggle-uncached-v138-r1-v1/VALIDATION.json</p>
+<p class="note">outputs/arc3-kaggle-uncached-v138-r1-v1/run/RESULT.json</p>
+<h3>S02 Immediate submission handoff</h3>
+<p>Selected candidate, excluded V139, final artifact hashes, research stop and automation deletion.</p>
+<p class="note">outputs/ARC3-Immediate-Submission-Handoff-v138-2026-11-02.json</p>
+<h3>S03 Neural dynamics pilot</h3>
+<p>N1 controls, prediction results and failed neural promotion gates.</p>
+<p class="note">outputs/neuro-world-lab/N1-REPORT.txt</p>
+<h3>S04 Schooling and zero prior controls</h3>
+<p>Synthetic schooling outcomes and distinction between memory and neural priors.</p>
+<p class="note">outputs/brain-school-lab/N2B-REPORT.txt</p>
+<h3>S05 Relational curriculum and recursive hypotheses</h3>
+<p>N3 and N3B training design, supplied program vocabulary and limits.</p>
+<p class="note">outputs/learning-repository-n3b/RESEARCH-REPORT.txt</p>
+<h3>S06 Broader executable world knowledge</h3>
+<p>N4 curriculum, school performance, conventional control, public transfer and ablations.</p>
+<p class="note">outputs/world-knowledge-n4/RESEARCH-REPORT.txt</p>
+<h3>S07 Early transfer and overlap correction</h3>
+<p>Early ARC results, neural control comparison and withdrawn independence claim.</p>
+<p class="note">outputs/arc-transfer-lab/RESEARCH-REPORT.txt</p>
+<h3>S08 Frozen policy entry and observable routing</h3>
+<p>Process interface, observable admission, preserved fallback and runtime budgets.</p>
+<p class="note">outputs/reliable-arc3-hybrid-v138/student.py</p>
+<p class="note">outputs/reliable-arc3-hybrid-v138/reliable/retained_coverage_admission_v18.py</p>
+<p class="note">outputs/arc3-submit-now-v138-final-check-v1/source/client.py</p>
+</section>
+<section><h2>Evidence register continued</h2>
+<p>Source identifiers refer to local research artifacts. The accompanying evidence index records every referenced path, SHA-256 and byte count. It contains provenance metadata only; raw experiments and benchmark traces remain outside the delivery.</p>
+<h3>S09 Retained research catalog and checkpoint</h3>
+<p>552 research entries, retained findings and completed action accounting.</p>
+<p class="note">outputs/ARC3-Retained-Skill-Catalog-2026-11-02-v85.json</p>
+<p class="note">outputs/ARC3-Resumed-Research-Checkpoint-v85-2026-11-02.json</p>
+<p class="note">outputs/ARC3-Failure-Retrieval-Index-v85.json</p>
+<h3>S10 Joint goal memory confirmation</h3>
+<p>Authored retained versus prior versus forgetting controls, and separate public diagnostic.</p>
+<p class="note">outputs/intersecting-track-confirmation-v1/SUMMARY.json</p>
+<p class="note">outputs/intersecting-public-transfer-v1/RESULT.json</p>
+<h3>S11 Sparse reflection transfer qualification</h3>
+<p>Eight authored lessons, retained control retrieval, exact replay and tamper rejection.</p>
+<p class="note">outputs/sparse-reflection-qualification-v3/RESULT.json</p>
+<h3>S12 Binary checkpoint learner and successful public replay</h3>
+<p>V138 checkpoint transfer, public win, semantic handoffs and evidence audits.</p>
+<p class="note">work/binary_checkpoint_temporal_inquiry_v1.py</p>
+<p class="note">outputs/binary-checkpoint-public-v2/RESULT.json</p>
+<p class="note">outputs/retained-coverage-qualification-v138/RESULT.json</p>
+<h3>S13 Checkpoint and temporal memory ablation</h3>
+<p>Offline counterfactual removal of retained rules and temporal evidence.</p>
+<p class="note">outputs/binary-checkpoint-memory-ablation-v1/RESULT.json</p>
+<h3>S14 Failure reuse efficiency experiment</h3>
+<p>160-action replay, frozen-prefix preservation and failed full-suite V139 stage.</p>
+<p class="note">outputs/binary-failure-checkpoint-prefix-v1/RESULT.json</p>
+<p class="note">outputs/binary-failure-checkpoint-public-v1/RESULT.json</p>
+<p class="note">outputs/binary-v139-qualification-pipeline/RESULT.json</p>
+<h3>S15 Rectangle and reflection development</h3>
+<p>Public development results for deformation and reflection goal interpretation.</p>
+<p class="note">outputs/shape-site-public-v22/RESULT.json</p>
+<p class="note">outputs/reflection-assignment-public-v16/RESULT.json</p>
+</section>
+<section><h2>Evidence register continued</h2>
+<p>Source identifiers refer to local research artifacts. The accompanying evidence index records every referenced path, SHA-256 and byte count. It contains provenance metadata only; raw experiments and benchmark traces remain outside the delivery.</p>
+<h3>S16 Carrier boundary diagnosis</h3>
+<p>20 of 23 motion predictions, boundary hypotheses and preserved 549-action prefix.</p>
+<p class="note">outputs/retained-carrier-projection-review-v1/RESULT.json</p>
+<p class="note">outputs/carrier-permanence-prefix-v1/RESULT.json</p>
+<h3>S17 Verified candidate progression</h3>
+<p>Each table row is a separate frozen candidate readiness record, not pooled best-game scores.</p>
+<p class="note">16 pinned source files are enumerated in the evidence index.</p>
+<h3>S18 Source package audit</h3>
+<p>Source equality, expected archive members, syntax and response-file exclusion.</p>
+<p class="note">outputs/arc3-kaggle-uncached-v138-r1-v1/PACKAGING-AUDIT.json</p>
+<p class="note">outputs/arc3-kaggle-uncached-v138-r1-v1/SOURCE-PINS.json</p>
+<h3>S19 Final local initialization check</h3>
+<p>Fresh source verification and guarded initialization with zero game actions.</p>
+<p class="note">outputs/arc3-submit-now-v138-final-check-v1/VERIFICATION.json</p>
+<h3>S20 Runtime and submission instructions</h3>
+<p>Tested dependencies, notebook deployment contract, commit fixture and competition rerun.</p>
+<p class="note">4 pinned source files are enumerated in the evidence index.</p>
+<h3>S21 Owned validation process receipt</h3>
+<p>Validation ownership, runtime and completed cleanup.</p>
+<p class="note">outputs/arc3-kaggle-uncached-v138-r1-v1/OWNER.json</p>
+<h3>S22 Twenty hour research and packaging plan</h3>
+<p>Promotion requirements, failure-driven priorities and local-only restrictions.</p>
+<p class="note">outputs/ARC3-Twenty-Hour-Research-Plan-2026-11-01-v73.json</p>
+</section>
+</main></body></html>

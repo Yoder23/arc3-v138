@@ -1,0 +1,2279 @@
+{
+  "version": "v138-r1",
+  "policy": "v138",
+  "baseline_score": null,
+  "policy_files": 557,
+  "files": {
+    "policy/adapter.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/adapter.py",
+      "sha256": "8f0280b89c8c620b3e6fa6e0d8015dde8de5f7e7ec8b1bdedb7e5f9a0718e9f8"
+    },
+    "policy/adaptive_student.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/adaptive_student.py",
+      "sha256": "b31d31d3dbdc296a416723c37e2154db7d01f2551e92c0746df77069e6d7f5da"
+    },
+    "policy/base/arc3_student_n6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/arc3_student_n6.py",
+      "sha256": "844a5a331ac0ae00d1244a1bf45ed7a068abb894710a6c1bba6632c47ae1a258"
+    },
+    "policy/base/brain.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/brain.py",
+      "sha256": "8a5f7782a6d7bc0c491fae29715df2abf26e68bed208e8796b34caffc3eca214"
+    },
+    "policy/base/causal_clicks.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/causal_clicks.py",
+      "sha256": "3dcf5ff788a4915160d36c0f6b68818a35639c13298f198fbcd989ee0701eedf"
+    },
+    "policy/base/click_objects.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/click_objects.py",
+      "sha256": "6a78c992e71f14302cd21f2f108b397dde225da44ab76035f070e35d3e3c4f45"
+    },
+    "policy/base/grounding.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/grounding.py",
+      "sha256": "1cde20f002c134c2ab191f0d69a22e1a23033b1f77fcde0f4f4db8ac276d88e1"
+    },
+    "policy/base/memory.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/memory.py",
+      "sha256": "cfd18832239cc3e679de2fe4f08d40bd078928e82ad9cb305d5be0c3cfec963e"
+    },
+    "policy/base/navigation.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/navigation.py",
+      "sha256": "ed914bbaf52f48b6daf92efb05886f1d16141d0a7ee0d2177800c382afc83e39"
+    },
+    "policy/base/object_family_scientist.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/object_family_scientist.py",
+      "sha256": "531cf9d3e80c34ed8b34ac07f978848075f844dd7dbe4aa7ab98fb481d13982e"
+    },
+    "policy/base/progress_memory.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/progress_memory.py",
+      "sha256": "dffc421cc5e40b9ccc211af929916fa935742c6799fb84647ad47b8de454e25e"
+    },
+    "policy/base/replayable_digest.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/replayable_digest.py",
+      "sha256": "5cba68a6ff68a4df5a3bb51a22f7ae5357c34b976d4c707610c0c96ed9d66f87"
+    },
+    "policy/base/retained_object_family_scientist.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/retained_object_family_scientist.py",
+      "sha256": "424770d3f4d22fe18bbf5090f21fa678795cf19becc53d25f3d645403bed736d"
+    },
+    "policy/base/scene_cells.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/base/scene_cells.py",
+      "sha256": "ba3ba51782ebfa36deabedb98b9c0613d36b42e040fc5dd9b52d33cae71cd23f"
+    },
+    "policy/categorical.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/categorical.py",
+      "sha256": "dff99cb89a5cca8bda008db5720f5de09ad72209e6420406ae436b87bbaadf06"
+    },
+    "policy/connector_student.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/connector_student.py",
+      "sha256": "de082e62b0987538d61f56699709b0b16e1dc6dc1d73e7bfc7fee081997309ba"
+    },
+    "policy/dependencies.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/dependencies.py",
+      "sha256": "84023bac44d68440c0736ff260f365e5db12352cb3fa7fc461c7c5ca0ad4bd39"
+    },
+    "policy/dictionary_student.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/dictionary_student.py",
+      "sha256": "1d8761f4fd43e3f909fb67635cd9cb2a0c4b57d181a59dc0269abbff5994040e"
+    },
+    "policy/frozen_student.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/frozen_student.py",
+      "sha256": "981c8b0051bdf648f3f920a568aa2dea08c4e826dec3f550f15a408c4ff97229"
+    },
+    "policy/guarded.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/guarded.py",
+      "sha256": "bc1c6444c404d7e16d2b14af59061e01231ff4430aa8867c35d7428cd7768485"
+    },
+    "policy/guards.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/guards.py",
+      "sha256": "1cfddbf6baddf96dbefcf99d6497afbb7afa53ed3c06ee220482539d4108c03d"
+    },
+    "policy/parent_v100.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v100.py",
+      "sha256": "ada0351d6b1582cc61dae58c96e89a71b0d866bd261c780c05cad6e980c6f153"
+    },
+    "policy/parent_v101.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v101.py",
+      "sha256": "a3f300482217fd261acc7ea6f6b4a483457d6437451e0b2094525a35eeef41cd"
+    },
+    "policy/parent_v102.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v102.py",
+      "sha256": "3b84ea43fcdc8a6800b762734a48fa97384641028f02f13c7e5f88a7f343e9ac"
+    },
+    "policy/parent_v103.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v103.py",
+      "sha256": "1a708f869993a72bcab08c5db19be0a5db7cf5527e544ffce7907a59370c41c7"
+    },
+    "policy/parent_v106.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v106.py",
+      "sha256": "1826dc30092f999000c0803ff7c6dc0bd042c9c040cc036b43baa07f45a4807d"
+    },
+    "policy/parent_v107.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v107.py",
+      "sha256": "738ec4d8123843bad85dbf31ebb11a09a826115b37cd0fdbc2ec97f791914e7b"
+    },
+    "policy/parent_v108.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v108.py",
+      "sha256": "14678246405db0ab90b848b01814c57fcd0459bd100742fce5855431ba059d4e"
+    },
+    "policy/parent_v109.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v109.py",
+      "sha256": "7b19d2d5c36d7e3633c0339bb4a18c244397ceb90ae7be4502223720d75a3fc9"
+    },
+    "policy/parent_v110.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v110.py",
+      "sha256": "55f2a18fabb8291c3719ab975a63bdc5ee4c26827dab56cb4db5ba221f1027c3"
+    },
+    "policy/parent_v111.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v111.py",
+      "sha256": "d3ec06d0ae9cbf0b47dd9020de28b5f44edcf08e9926adf9eabb0d31ef7a832a"
+    },
+    "policy/parent_v113.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v113.py",
+      "sha256": "9c44479faacf94b073de674b799320c6385e680cac4063af3378ed25c0572a22"
+    },
+    "policy/parent_v114.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v114.py",
+      "sha256": "1b5ea054adb6f66042a3e6285a66995da358221aa8d6505d9fbb0c59b3c9ae7a"
+    },
+    "policy/parent_v117.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v117.py",
+      "sha256": "34eca50a0609ffa6d6534760ee01da25b0d6e281efbadb0838c9e4b78c9db45c"
+    },
+    "policy/parent_v118.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v118.py",
+      "sha256": "8c14208fe98a7d07c73b5073b349ff5c301df2f76d27ed4ac9a9e1a35e99d07e"
+    },
+    "policy/parent_v58.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v58.py",
+      "sha256": "2b90fb53cf298bf0118b3e850097986f3ec60c2726168367a84baf9a7e65b3da"
+    },
+    "policy/parent_v78.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v78.py",
+      "sha256": "81b79da44a2a5320c8ab5358c6ababa46829acee9e309a3baa5d5cfd09a8315e"
+    },
+    "policy/parent_v80.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v80.py",
+      "sha256": "bd5d5bdacc428b6774e8b9d9d31fc391491cdb3377a7be8f5c6199809a3a9161"
+    },
+    "policy/parent_v81.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v81.py",
+      "sha256": "987c23f2ad05aaf12e4c7c2268477b768f46ce9d0356eca70492ccb7e0b6a531"
+    },
+    "policy/parent_v82.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v82.py",
+      "sha256": "751d10b230c6f48a12a59a75aa0a51a07e41cfe6852261db5de444f7cc25e2a5"
+    },
+    "policy/parent_v83.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v83.py",
+      "sha256": "b8cf46ac24a0dc2531aac4e58b249eacc8ceec3d65c1144d60c7643afec93fe7"
+    },
+    "policy/parent_v84.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v84.py",
+      "sha256": "8c6a4ec466c2f0b89cc7cc3d03a742f5c9f1cad3532844f1fdf5ed6970f8d829"
+    },
+    "policy/parent_v85.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v85.py",
+      "sha256": "264a133f8e7dca9ab724f14f2d3d892b7b461e6aeb9917036d2ab20d82e3b5eb"
+    },
+    "policy/parent_v86.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v86.py",
+      "sha256": "d681e74cd900c1526712d13659788f3ca5f81b29710ae182c799398c9622d244"
+    },
+    "policy/parent_v87.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v87.py",
+      "sha256": "8ab331ba27f0b7539c54a94209d009ac10a41b0bd9596ae71a8b6c23bc983b49"
+    },
+    "policy/parent_v88.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v88.py",
+      "sha256": "d0a3e564d94353dba8c00083b94f20b4236fa045272c1c509ada4e8255b9a970"
+    },
+    "policy/parent_v89.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v89.py",
+      "sha256": "b40ecf03023b61f9caa1300ea66a618b292ff580a6447f4d2fb8dd9e84c8d79f"
+    },
+    "policy/parent_v90.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v90.py",
+      "sha256": "b27915c3021a31420aea270229f0315f1335311a00e068db19537e88b4dbc66e"
+    },
+    "policy/parent_v91.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v91.py",
+      "sha256": "b3b390303a0d6c7cadc0c2f90aa94c5f0d9b937626314df07df6a071d0074005"
+    },
+    "policy/parent_v92.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v92.py",
+      "sha256": "fa944ed9a0a54d9ceee8f2d0eb2b6b16d914d6b7fcfd5523513914e87728c7c7"
+    },
+    "policy/parent_v93.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v93.py",
+      "sha256": "dd8544244bbb009dcd9b93ae17b0fa80f74de493653b1ac6361ec653b5e62e9e"
+    },
+    "policy/parent_v94.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v94.py",
+      "sha256": "03ff9a0e0670b06d093f6f1e206dde8745aa981c4502354f2fb4beccef2c0b12"
+    },
+    "policy/parent_v95.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v95.py",
+      "sha256": "ae3f6c4281b5f0a947ffe4113b2a35382b017fdb6c092680bd7cba5ccaa80895"
+    },
+    "policy/parent_v96.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v96.py",
+      "sha256": "f7433cfa31b31db43c92652e029a767d70f6623528b6b77c7141736e82ba7f2f"
+    },
+    "policy/parent_v97.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v97.py",
+      "sha256": "e752d122ca7143ac228f8300dcd8f7f82e1ba6f493ba950d380dae60c8b98dca"
+    },
+    "policy/parent_v99.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/parent_v99.py",
+      "sha256": "099d3f0384eddf2d4a83002bb51e50d0b9470cef1bd03b5f56720d06995c37fc"
+    },
+    "policy/reliable/active_motion_inquiry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/active_motion_inquiry_v1.py",
+      "sha256": "60e678e89126dd47d3db3cf3551016731817bdfbef49beaea69bc63607b6550e"
+    },
+    "policy/reliable/adaptive_acquisition.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/adaptive_acquisition.py",
+      "sha256": "a5e1bc2e495d0cd6e397e1a286ec5a82682b5d4d3ba43dbb6b4f1fd8781d382c"
+    },
+    "policy/reliable/adaptive_dictionary_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/adaptive_dictionary_learner.py",
+      "sha256": "c199997a1a39c458e814fc940c9057d43e232f49a9553ea020d74045c4a6f533"
+    },
+    "policy/reliable/adaptive_dictionary_learner_v10.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/adaptive_dictionary_learner_v10.py",
+      "sha256": "b47c3cbf51c3010f12f54e1c4d564ee8e2ce402b160afbe60c9569ef021fef4e"
+    },
+    "policy/reliable/adaptive_dictionary_learner_v11.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/adaptive_dictionary_learner_v11.py",
+      "sha256": "80a7ba56672088f071d460bf914849357211dce9aa382abf2984c5f7044a0f7d"
+    },
+    "policy/reliable/adaptive_dictionary_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/adaptive_dictionary_learner_v2.py",
+      "sha256": "a04de8dd0baf952a457df4e54b9674cfc83147d272752fa1d6a12b02cf2ca298"
+    },
+    "policy/reliable/adaptive_dictionary_learner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/adaptive_dictionary_learner_v3.py",
+      "sha256": "51c3e61c368c2cbe1a4cec82b7b12b1d15459f7925980b3aa99364cc9be80ccb"
+    },
+    "policy/reliable/adaptive_dictionary_learner_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/adaptive_dictionary_learner_v4.py",
+      "sha256": "e33a821f7b6e5f82a9c7a0bb3e18ac343b2e7d3d2b9efd77ba5450a348996716"
+    },
+    "policy/reliable/adaptive_dictionary_learner_v9.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/adaptive_dictionary_learner_v9.py",
+      "sha256": "0f29b07a95bd2f2997c8639e026c2e49aa2a57c8b19a5622f99d0baa8913ee15"
+    },
+    "policy/reliable/advisor_retry_session.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/advisor_retry_session.py",
+      "sha256": "9c90db6f987519b7cd5c9f464021229617f0b7f45d7201819988c67ebede960a"
+    },
+    "policy/reliable/animated_switch_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/animated_switch_admission_v1.py",
+      "sha256": "8331b6fe95ced9364305cbe9b30c0ed0ed2f34cf05dd844b4d194bc38f2c3bf9"
+    },
+    "policy/reliable/animated_switch_navigation_v20.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/animated_switch_navigation_v20.py",
+      "sha256": "0acbef36a50dddc0d29f8ed50c29db9cb813e43ed6a8eee4b7eafba2de0a2eb4"
+    },
+    "policy/reliable/animated_switch_navigation_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/animated_switch_navigation_v5.py",
+      "sha256": "019c8b44e4b7fe6d474d221ef32e87fc59dbdd698f6d64036ed937bcc6d268c0"
+    },
+    "policy/reliable/anonymous_link_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/anonymous_link_admission_v1.py",
+      "sha256": "22db2b7bdfd4aca31dca5dc1f4f2233519ffb507ede8f68c938e4652db242f94"
+    },
+    "policy/reliable/anonymous_link_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/anonymous_link_inquiry_v2.py",
+      "sha256": "ae4d584da5ac98aabc900b6927cfd5444e8c1f7741fcdfcebe938688144bbe7f"
+    },
+    "policy/reliable/anonymous_link_learner_v11.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/anonymous_link_learner_v11.py",
+      "sha256": "2ff28565687ccb6a2e52988acd6ae6a13dd011fbf7923e74f876a2a44f14158d"
+    },
+    "policy/reliable/anonymous_link_scene_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/anonymous_link_scene_v2.py",
+      "sha256": "f04aca6d7005cd7f3fc5ae7ca6e16d6f0350270cfa09e9e260261803b9579d4a"
+    },
+    "policy/reliable/appearance_disjoint_tool_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/appearance_disjoint_tool_learner.py",
+      "sha256": "6e83bef503c4b643b0f1b2c7a598485c11a7e81839dc23a8be8dc1ea0f07b916"
+    },
+    "policy/reliable/appearance_tool_word_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/appearance_tool_word_learner.py",
+      "sha256": "c065aca56efb94f9c051edcad56712473be95abcdea6c161d141157cd698e22e"
+    },
+    "policy/reliable/articulated_line_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/articulated_line_admission_v1.py",
+      "sha256": "a0887d8bc9b53e510c72c5cfb660ca85db3c1f52bfea19b58c0b45f8f6f79744"
+    },
+    "policy/reliable/articulated_line_planner_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/articulated_line_planner_v6.py",
+      "sha256": "32fc9eab28699b036e28a84baf7d07ea66c197d35691cd87e0fe4f3d6442321a"
+    },
+    "policy/reliable/articulated_rod_inquiry_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/articulated_rod_inquiry_v4.py",
+      "sha256": "1edfa4d99da473a41efb93e465667310745398e0544952af8745f757e28a77f0"
+    },
+    "policy/reliable/articulated_rod_model_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/articulated_rod_model_v4.py",
+      "sha256": "82abf226ebb3125b6c99078c5bbfcee002089f5a92af22ea8524901701b9e28c"
+    },
+    "policy/reliable/atomic_program_frontier_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/atomic_program_frontier_learner.py",
+      "sha256": "de6a297f18b24eb5900a180494a55011404cfd51f959307262a6192cedcc7673"
+    },
+    "policy/reliable/atomic_program_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/atomic_program_learner.py",
+      "sha256": "4a583e5c4732a1820882a7979bc8267296d0dd19992c01120615e200f1c58791"
+    },
+    "policy/reliable/atomic_program_noop_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/atomic_program_noop_learner.py",
+      "sha256": "b2e70348ae6929dd8a50c5fe6fba9d3cd6f94fd14e6b850d0dcc14448d3087d8"
+    },
+    "policy/reliable/atomic_program_stagnation_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/atomic_program_stagnation_learner.py",
+      "sha256": "30919532950f0ddd5ea8fc5a5b110d73d76b572f8763bb16b098e5f8c626cb51"
+    },
+    "policy/reliable/atomic_word_programs.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/atomic_word_programs.py",
+      "sha256": "a3bf28acfdbcf9d60b72ad82c94eacced45d2ade16fb00b8115f0bedec74335f"
+    },
+    "policy/reliable/audit_connector_frames_portable_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/audit_connector_frames_portable_v1.py",
+      "sha256": "aca6ac1d1859eec38e0e42d88aa9606709dc80f39427c5deba45ec10557f471f"
+    },
+    "policy/reliable/beam_compound_optics_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_compound_optics_v2.py",
+      "sha256": "5d953b199ac416fb2061082a851e5a01de5ba7a5c6db754c84a1f03cbf7be35c"
+    },
+    "policy/reliable/beam_connected_source_goal_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_connected_source_goal_v1.py",
+      "sha256": "53feb0229dfddd88d8c95dbdec1a91b7b395fcb91ae159e67625c489815df93a"
+    },
+    "policy/reliable/beam_corner_optics_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_corner_optics_v3.py",
+      "sha256": "2803418c60c76f3d5d8e8a7a77877b4bf232868b750d4fe27a872165a30d8dd0"
+    },
+    "policy/reliable/beam_coupled_motion_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_coupled_motion_v1.py",
+      "sha256": "72c6de78ee6ef93c9dfbb86525bfd2d42b492a575005f9f2140e3e920dd8e31a"
+    },
+    "policy/reliable/beam_front_collision_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_front_collision_v1.py",
+      "sha256": "90f2682e6b3024b0edfa178a5d8ab5752a5666f558003ba96979e3f37650f416"
+    },
+    "policy/reliable/beam_front_collision_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_front_collision_v2.py",
+      "sha256": "2789e3465d8152166a024310f29ed07386cf5c6661f01df33bec960a4d094444"
+    },
+    "policy/reliable/beam_goal_diversity_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_goal_diversity_v1.py",
+      "sha256": "78c8b5da82a3b6b45a9d007df9fad3ab95716d8f5b422d2c674e309ae79599d2"
+    },
+    "policy/reliable/beam_joint_model_selection_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_joint_model_selection_v1.py",
+      "sha256": "8de80ff0fd9bd958b571b48022fb01021871690aa80a26a0283650226274f024"
+    },
+    "policy/reliable/beam_motion_constraints_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_motion_constraints_v1.py",
+      "sha256": "9f8c2c8edf51516a341f058c50c1d1c74f21a1751b750c192cb9723acc600b35"
+    },
+    "policy/reliable/beam_moving_emitter_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_moving_emitter_v1.py",
+      "sha256": "3ad35b06bbe17c04633d0267e219191af5d0ce68840c45f4759eed71697b977c"
+    },
+    "policy/reliable/beam_reachable_configuration_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_reachable_configuration_v1.py",
+      "sha256": "1bff14896768efee50e6a8e3accb1522abba2e16fdb66c43bb8e16c46513be61"
+    },
+    "policy/reliable/beam_reachable_configuration_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_reachable_configuration_v5.py",
+      "sha256": "1a421dff8572a6517ed63dc5f5506ecbd577ad9e8f601c763b9fd28e6388c51e"
+    },
+    "policy/reliable/beam_retained_segmentation_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_retained_segmentation_v1.py",
+      "sha256": "c4be592d69a404585ebd435a0f021e175cc403559143bdc36aae3eb74a9ec899"
+    },
+    "policy/reliable/beam_retained_segmentation_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_retained_segmentation_v3.py",
+      "sha256": "6edc0c2cb37e56a9353ef26ddf45a3bf9183d7d4227a838806615addfb2e8db8"
+    },
+    "policy/reliable/beam_split_geometry_v10.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_split_geometry_v10.py",
+      "sha256": "2acd95512920b447efd2eb75f26a53ab0cc1438c93466c8451c28ee328debcd1"
+    },
+    "policy/reliable/beam_split_geometry_v16.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_split_geometry_v16.py",
+      "sha256": "16d6a9d5650d07339cda1aae6ed8312c87f192c6498f4f1d3f1363e8c9a258ff"
+    },
+    "policy/reliable/beam_split_geometry_v20.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_split_geometry_v20.py",
+      "sha256": "4ba39d20edc700c66023d3ffe7bd7b86cd10736a09f533666a23cfd85dd6a109"
+    },
+    "policy/reliable/beam_split_geometry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_split_geometry_v3.py",
+      "sha256": "69d8378a5db6807a0ea88e811325f08b5460fc1a690e3d10f1ca9dcedf1e8e5a"
+    },
+    "policy/reliable/beam_split_geometry_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_split_geometry_v5.py",
+      "sha256": "31331352fac266ab0b2d1edf39a1dc6cbd883cb8f47e5e43616a2e791a0d5bf9"
+    },
+    "policy/reliable/beam_split_geometry_v9.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_split_geometry_v9.py",
+      "sha256": "3629f418706120a8c4138c35985fa368b13cfa51d4003955fa89ce6a92e1caac"
+    },
+    "policy/reliable/beam_split_learner_v20.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_split_learner_v20.py",
+      "sha256": "4463487e49b468954b894643fd229789937c807972a6f62fac5e70886937a1fd"
+    },
+    "policy/reliable/beam_split_learner_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/beam_split_learner_v5.py",
+      "sha256": "2aedc27e333e53c52fa40d489f613c120709c9a91df26b63d4eb54882480fba5"
+    },
+    "policy/reliable/binary_animation_learning_v8.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_animation_learning_v8.py",
+      "sha256": "5c8cf0340c8059663e034edd13dc0c0c4f446076fb0d297e542f6d6e1ee1bcf7"
+    },
+    "policy/reliable/binary_checkpoint_temporal_inquiry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_checkpoint_temporal_inquiry_v1.py",
+      "sha256": "ef462967aea609ae468f5e2f4566f3dc80aa450e1d1f902dfe69337c2c1ef4e3"
+    },
+    "policy/reliable/binary_checkpoint_transfer_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_checkpoint_transfer_v1.py",
+      "sha256": "31f16931788e9abf0668b9eb6033efdac19ae55b47e16a15fa0d128a7f61fda2"
+    },
+    "policy/reliable/binary_contrastive_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_contrastive_geometry_v1.py",
+      "sha256": "2d393f9c09c12b5e156690834d4a042c444af6d20373075997972e8a16cb3856"
+    },
+    "policy/reliable/binary_contrastive_inquiry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_contrastive_inquiry_v1.py",
+      "sha256": "ee8a2c4b88d69ecd302ae7f31248e3cf106e2680ba5bcd36fc81f7d5834fbad7"
+    },
+    "policy/reliable/binary_demonstration_bootstrap_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_demonstration_bootstrap_v1.py",
+      "sha256": "eb0cfa609da54bbd0e755800b3de8e35e857e7b1ce9b816e62a0ab74acf43c4c"
+    },
+    "policy/reliable/binary_demonstration_learning_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_demonstration_learning_v1.py",
+      "sha256": "ef9220ea65a07e4f639363d19e0780591c2d4e5a1dad80e8b0bb20242d6176de"
+    },
+    "policy/reliable/binary_demonstration_probe_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_demonstration_probe_v3.py",
+      "sha256": "8cc9530221d6946f8aa84468e052358b937fe3d0a5514d366e2aee26bb3c0d2e"
+    },
+    "policy/reliable/binary_effect_planner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_effect_planner_v1.py",
+      "sha256": "921f46fccf97491a74d2e33b311aee660ddb5f3cedd942153a21a12cbe09d7d9"
+    },
+    "policy/reliable/binary_goal_anchored_tracking_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_goal_anchored_tracking_v2.py",
+      "sha256": "5686f4ce03486f2acfaa3893ac43838ee564ce08dd70e692ceee2b9871357ab0"
+    },
+    "policy/reliable/binary_lattice_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_lattice_learner_v2.py",
+      "sha256": "738c9e144ff0f6a3c13dd4d7e2ae243a34a83045635ba3e70c0dadfb2dd7375f"
+    },
+    "policy/reliable/binary_rolling_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_rolling_admission_v1.py",
+      "sha256": "ed14eb3627287fe1c9a9148c8b72860281aed5a1f47d38e1f293cd2d29df4299"
+    },
+    "policy/reliable/binary_rolling_program_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_rolling_program_v1.py",
+      "sha256": "2e34ede6d94fe8899605e09656c552af33fa8130e0816440cc5928111914058c"
+    },
+    "policy/reliable/binary_temporal_field_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_temporal_field_v1.py",
+      "sha256": "edfd00954da63835d41548eedd2467e5a901efc4cc44c1af74455ca2ee756114"
+    },
+    "policy/reliable/binary_temporal_inquiry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/binary_temporal_inquiry_v1.py",
+      "sha256": "c8a83b24016eafeb670827dec1a9edbce0e45dadf0da6e290c37e8c2701b1d09"
+    },
+    "policy/reliable/carry_admission_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_admission_v2.py",
+      "sha256": "aa738cd19af572b70acc9b0c61ef55431781e2835a7a2602a715ea6664aa3ca2"
+    },
+    "policy/reliable/carry_admission_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_admission_v3.py",
+      "sha256": "84c735e0969549323ea489a0d3a2bf0c1d67559386e6e12f6f15f9246560e522"
+    },
+    "policy/reliable/carry_affordance_geometry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_affordance_geometry_v2.py",
+      "sha256": "cc60ca7737709f52b658790e9c64955b68ff2ca324896320cf16f673c7b2933e"
+    },
+    "policy/reliable/carry_context_refinement_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_context_refinement_v1.py",
+      "sha256": "89eb86aa5b6e44d25de3fce1e986f96a65258a8a4d0ebd72fc5d537129380afc"
+    },
+    "policy/reliable/carry_distributed_goal_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_distributed_goal_learner_v1.py",
+      "sha256": "47a4ebee4edda769fa26cf9ab90bdf2548a76cd7e09d978a157ff6fb5a99a9c7"
+    },
+    "policy/reliable/carry_distributed_goal_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_distributed_goal_learner_v2.py",
+      "sha256": "71181ae15a60d10be7c83864a477fd250097143a9ea06c251f6d9ec66bbac331"
+    },
+    "policy/reliable/carry_grasp_staging_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_grasp_staging_v1.py",
+      "sha256": "5f2af7c78dac78a9ab586ae866856519fd9bcd69e1e8067882d21ade1d4c70fb"
+    },
+    "policy/reliable/carry_interaction_learner_v10.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_interaction_learner_v10.py",
+      "sha256": "22d1da1ca5c9dbdd0843e8ec4c8e2ae7901c8f04b27b1fef62962ea5f41561a6"
+    },
+    "policy/reliable/carry_interaction_learner_v11.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_interaction_learner_v11.py",
+      "sha256": "e10c4add59382c3d51b9edd4614c43767fd048207403cb0317c389e21ec8f78a"
+    },
+    "policy/reliable/carry_interaction_learner_v13.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_interaction_learner_v13.py",
+      "sha256": "872fa30e1af3de49016593c911341e8335c579b0e487190ff855efe95596ee02"
+    },
+    "policy/reliable/carry_interaction_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_interaction_learner_v2.py",
+      "sha256": "8d6f87ff42a06090e47d443217954a12b67ebcfcc25f496cb92394cc099a079b"
+    },
+    "policy/reliable/carry_interaction_learner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_interaction_learner_v3.py",
+      "sha256": "06c8f01752ffc092165da8ec2fe701465368bcfc9fca00179503e60eb67913c8"
+    },
+    "policy/reliable/carry_interaction_learner_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_interaction_learner_v4.py",
+      "sha256": "4087e1cc84eb7adbb82749e54ba94757cf07d440b4261e4ffffef76cf9e04d3c"
+    },
+    "policy/reliable/carry_interaction_learner_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_interaction_learner_v6.py",
+      "sha256": "88568afdab39d7aff76bed4f2a8856e34820efe17e011d73149a831657f2e1f3"
+    },
+    "policy/reliable/carry_interaction_learner_v7.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_interaction_learner_v7.py",
+      "sha256": "8e8162d29cd1e407ab048458d9010ea785ea5c527f6b5101557dc7450431a54c"
+    },
+    "policy/reliable/carry_material_transfer_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_material_transfer_v1.py",
+      "sha256": "11309bd16d9e545bddb6746043194f67975c860e32076a2e042d6bd6dc23a039"
+    },
+    "policy/reliable/carry_material_transfer_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_material_transfer_v3.py",
+      "sha256": "54d7c4338e1f6ea99765406f7914701184e739fa348507dd05d315ae1b2d50af"
+    },
+    "policy/reliable/carry_material_transfer_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_material_transfer_v4.py",
+      "sha256": "eb6a0283a1866684ff70482b65e49c70581219046ef116c60e95ecf834242bc6"
+    },
+    "policy/reliable/carry_projected_collision_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_projected_collision_v1.py",
+      "sha256": "c4d52b5bf8d432c257bf51f2091c3555794954a7a001bb1b52d09e5e8730e927"
+    },
+    "policy/reliable/carry_projected_collision_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_projected_collision_v2.py",
+      "sha256": "9f87df28c48e692b077147e2f2d79232eaffa084dcba0055ab38b71e5bfae224"
+    },
+    "policy/reliable/carry_regrasp_revision_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_regrasp_revision_v1.py",
+      "sha256": "df74e15bae7443342fe5b1484667cf22c1a46c3d730e2318f5f11792d68b32b3"
+    },
+    "policy/reliable/carry_regrasp_revision_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_regrasp_revision_v2.py",
+      "sha256": "7cebf6a430107324aad036b1ec0a07515d64cc0c884a64bd9a6ab359c7a35170"
+    },
+    "policy/reliable/carry_regrasp_revision_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_regrasp_revision_v3.py",
+      "sha256": "46911d30e0915d7e84b5a57c2796edf0e1af9c81725317fb973a73e5d7090080"
+    },
+    "policy/reliable/carry_role_transfer_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_role_transfer_v1.py",
+      "sha256": "3f84e14f3aad6d5587437526a8584f7b9cbc6604ea82bacde9c51cec2eb078a8"
+    },
+    "policy/reliable/carry_transport_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v1.py",
+      "sha256": "0123c10db759499b74ac7849506c70958f82e6ae2978a05d035f9f7df35562a3"
+    },
+    "policy/reliable/carry_transport_learner_v10.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v10.py",
+      "sha256": "1b837464c561f45dfef6b107f5f07d8e77d46ce7e32d0c0b9930747a9b173f77"
+    },
+    "policy/reliable/carry_transport_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v2.py",
+      "sha256": "f4c2cca1eb11da7b6abfaefcd0b82dbceba33dd28128f696171225252b98fdfb"
+    },
+    "policy/reliable/carry_transport_learner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v3.py",
+      "sha256": "3ab7c86955701a24210c624de3c334869ac78f5fa1af035a907a8dd0ec6041de"
+    },
+    "policy/reliable/carry_transport_learner_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v4.py",
+      "sha256": "ff576a0e67b041cae9c22b4f954d48c2c0a1754e0eabe90f2aed18dc13076f37"
+    },
+    "policy/reliable/carry_transport_learner_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v5.py",
+      "sha256": "5ea5d4b00f740849ef8546b5c03a5c87a8ebc769505f43e1718eb0f83f5f632b"
+    },
+    "policy/reliable/carry_transport_learner_v7.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v7.py",
+      "sha256": "c8cbee7fada59667f8cbab946ad8de7a24c0387e794b205595f20a61cf3bd62a"
+    },
+    "policy/reliable/carry_transport_learner_v8.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v8.py",
+      "sha256": "3069df0f4f216949ccaabd83704aaa6ec9b0769e40d4b942428b1251e64b6f53"
+    },
+    "policy/reliable/carry_transport_learner_v9.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/carry_transport_learner_v9.py",
+      "sha256": "c4604309f985a79e8f864edd0c96f7d128637267fc7318c52966553fd89be07f"
+    },
+    "policy/reliable/centered_symbol_rows_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/centered_symbol_rows_v1.py",
+      "sha256": "b21eda08795fd942f6bd1acf7e2719f768ae27a3d0e33a96816ada63ecd8ac9d"
+    },
+    "policy/reliable/centered_word_geometry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/centered_word_geometry_v2.py",
+      "sha256": "479093236ad09d439613f3eff71c6ea923a910471804d37bbe26382d62e2ed99"
+    },
+    "policy/reliable/centered_word_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/centered_word_learner_v2.py",
+      "sha256": "699cd2160a4f1996011c0ab0b5ca7e0f4e9f2df954304cdbb0be2a5edd223c9c"
+    },
+    "policy/reliable/chain_endpoint_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/chain_endpoint_inquiry_v2.py",
+      "sha256": "ab84e54f93e6bf6f7d948d09d486b82486cfb9972c6d66ef2e5e3840635706b2"
+    },
+    "policy/reliable/clearance_route_inquiry_v11.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/clearance_route_inquiry_v11.py",
+      "sha256": "5c273c1a826a9031eb479bbe141250cca850ca4eb959ec413c2ba546e3b2ebc0"
+    },
+    "policy/reliable/compartment_prerequisites_v1b.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/compartment_prerequisites_v1b.py",
+      "sha256": "c062f7cffe86906c3cabe106d13b421156b307dad414fc2098414a9e7d020a3a"
+    },
+    "policy/reliable/compartment_prerequisites_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/compartment_prerequisites_v4.py",
+      "sha256": "06ead731f764cf812f1c1c58f5b3d5042dc7012c03fce13ed175a40d83efbf26"
+    },
+    "policy/reliable/completed_contact_pose.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/completed_contact_pose.py",
+      "sha256": "9aeadbb587719814cff193e2c72bc4a8ac2f748c8fe1e40c1764d7597fcc772d"
+    },
+    "policy/reliable/completed_contact_pose_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/completed_contact_pose_v2.py",
+      "sha256": "8aeaff628f395220856da437963dce92d13b2a2fc8f7e5e215a60421d44cb30a"
+    },
+    "policy/reliable/completed_contact_pose_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/completed_contact_pose_v3.py",
+      "sha256": "d0cc5a1a8d3c82737ae93d2cc804fdd723cae9209f234cbf52cb2ff1574f45d4"
+    },
+    "policy/reliable/completed_marker_pose.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/completed_marker_pose.py",
+      "sha256": "35d6df0ce16cb5da767e4f93e2f31fb283a2dc687037ad695f748a002a95ec17"
+    },
+    "policy/reliable/completed_pose_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/completed_pose_learner_v2.py",
+      "sha256": "7a269806f7eed3c3fefda178d955b995589c624f625235bf8372fcfb8048afcd"
+    },
+    "policy/reliable/completion_tool_word_handoff.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/completion_tool_word_handoff.py",
+      "sha256": "6c70519face52095ebf3f6732b51939f70e2dd19c543ecac364a795479327375"
+    },
+    "policy/reliable/completion_tool_word_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/completion_tool_word_learner.py",
+      "sha256": "d4c88929ddd21a77c2b6c6eae3588480fdfaa934de27e2daecd15cb7bf8cdf26"
+    },
+    "policy/reliable/component_figure_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/component_figure_inquiry_v2.py",
+      "sha256": "5af27d9390a45ef8373e288f72aedb5974c011a6f8a388b07437ec8f33fa29f7"
+    },
+    "policy/reliable/component_figure_model_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/component_figure_model_v4.py",
+      "sha256": "e8c35d8a212a9e6f0264137d918c8168efccd195923c26d73acb2ba1bfef2b8d"
+    },
+    "policy/reliable/component_figure_scene_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/component_figure_scene_v2.py",
+      "sha256": "41ea07e0380963eadbc3947d2cf085a2a51607e77167bcc4dae64b7accd29560"
+    },
+    "policy/reliable/composed_learning_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/composed_learning_admission_v1.py",
+      "sha256": "a182a7a1492a123fa719a6a69426e7008e6205bfb2841c8b51a4c6262d827a71"
+    },
+    "policy/reliable/composed_menu_equations.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/composed_menu_equations.py",
+      "sha256": "5c6d5982d6442db3d063a54f3f8390f3515d323db04d303d68a76f00b9c0198a"
+    },
+    "policy/reliable/composed_menu_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/composed_menu_learner.py",
+      "sha256": "a5dcac84dedc49cf1e8dd199d29ec8455c4c2701c3f5958e24328b1fd83ff1bc"
+    },
+    "policy/reliable/composed_menu_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/composed_menu_learner_v2.py",
+      "sha256": "934a6c9fa559116d388654d8d030cde38b8472c8a56a12fb3fac3da9560fbdfb"
+    },
+    "policy/reliable/composed_word_layouts.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/composed_word_layouts.py",
+      "sha256": "29bfd1a4ad865668045c979e343be37b2c4eaeed1c0d1d53e4f41d97264e8c4b"
+    },
+    "policy/reliable/composite_components.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/composite_components.py",
+      "sha256": "4370f4683ebf4e789083f765a3a997eb7a7ed382f4a5332c57333880e3b44146"
+    },
+    "policy/reliable/composite_connector_learner_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/composite_connector_learner_v5.py",
+      "sha256": "45fd9cd0b3b67bea4ebb266374c5c1b7a186cd19dd4276ad3a03453c515d6237"
+    },
+    "policy/reliable/composite_connector_learner_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/composite_connector_learner_v6.py",
+      "sha256": "9f3cdeac70b70a45673899fd778008526a54b29c730e713b869762ea01873d22"
+    },
+    "policy/reliable/compound_planner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/compound_planner.py",
+      "sha256": "a94159111d845f8d42ab889e3869001199fe8d4b673faafc68726378eab457df"
+    },
+    "policy/reliable/conditional_disjoint_tool_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/conditional_disjoint_tool_learner.py",
+      "sha256": "98a788620b515cb2efb30fb34997be0d9191c82a20085c1fb66a50299cb90593"
+    },
+    "policy/reliable/conditional_goal_motion_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/conditional_goal_motion_v1.py",
+      "sha256": "037e9c3a53b43db3ece80c51e598dbfd36cfdd9680e50fb959d9cae90b33698b"
+    },
+    "policy/reliable/conditional_goal_planning_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/conditional_goal_planning_v3.py",
+      "sha256": "d31efbd0cf247d87f745aea3d4f241d5cc6a6b64d2e762e77e1b502813d410e4"
+    },
+    "policy/reliable/conditional_tool_word_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/conditional_tool_word_learner.py",
+      "sha256": "18051ae951b3b2cfecdb6610252001edf2a0d7bf4b4871c6061b3036899af33d"
+    },
+    "policy/reliable/connector_assembly_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_assembly_admission_v1.py",
+      "sha256": "8aa922d00a1638e8af5acf9b484fe696f8beb9eaae7793e30caba09256bc1bd3"
+    },
+    "policy/reliable/connector_assembly_admission_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_assembly_admission_v2.py",
+      "sha256": "7f6f51de4214cc96c4504f6bf5ad182701b70fabe2125951b960826a3b2f36a0"
+    },
+    "policy/reliable/connector_assembly_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_assembly_geometry_v1.py",
+      "sha256": "81781d136287a3b6564d2f9099a055a5921c57c7235592cf43902033eb9b7bd2"
+    },
+    "policy/reliable/connector_assembly_layout_candidates_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_assembly_layout_candidates_v1.py",
+      "sha256": "8c14766bd52033acb0e4316f250c45ab63616946921c7ba7803686022abe7b25"
+    },
+    "policy/reliable/connector_assembly_learner_v16.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_assembly_learner_v16.py",
+      "sha256": "9862b81f7e6d031108180ca4d23dcb256f6f9f4f1200bf9370379a8d455df7cd"
+    },
+    "policy/reliable/connector_assembly_learner_v21.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_assembly_learner_v21.py",
+      "sha256": "187d3713bfee21d380388c3592dba5ed372137bb685247d6f97e537d17d4e8a4"
+    },
+    "policy/reliable/connector_assembly_learner_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_assembly_learner_v4.py",
+      "sha256": "fbfa78a00f3be191554c88990b70c7095ce658fbd274ad0ac68f8976283d3d5d"
+    },
+    "policy/reliable/connector_assembly_learner_v7.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_assembly_learner_v7.py",
+      "sha256": "feb75e00d1eb30b7928ae25c96b954aa5ca1d62efadcc4fd88bae6a237c9c6ec"
+    },
+    "policy/reliable/connector_connected_goals_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_connected_goals_v1.py",
+      "sha256": "37c1f901f347f35a378a270f7786bae3e691bed1a91353b31741dafb04f016cb"
+    },
+    "policy/reliable/connector_extension_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_extension_inquiry_v2.py",
+      "sha256": "7957ff5e4faf8b30cde002b8f65afba8ea0ed6fd8b6727cb901171c7a01de2e9"
+    },
+    "policy/reliable/connector_extension_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_extension_inquiry_v3.py",
+      "sha256": "a0e82d7fcae337a6886ae67beccb920e4e95e94871967f708ec286179922890a"
+    },
+    "policy/reliable/connector_goal_interpretation_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_goal_interpretation_v1.py",
+      "sha256": "c76e1156927cbca2e14ea97a62f3ae63d8023b4eb0645a23599c703b9ad4f71e"
+    },
+    "policy/reliable/connector_marker_parts_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_marker_parts_v1.py",
+      "sha256": "1e5b6a37b68467d34193eba2669bc07e2b9fd4767e76310baf1880d6307517d4"
+    },
+    "policy/reliable/connector_reveal_geometry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_reveal_geometry_v2.py",
+      "sha256": "7bacb12134b8a34a9b56d45542ddc99e327fc6e3ebc347d66d70233b8e76a97f"
+    },
+    "policy/reliable/connector_reveal_geometry_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_reveal_geometry_v4.py",
+      "sha256": "0c9623e2a3a6f4f0a0c03c15dfe5397d361a4ba0a2cd2014b62d847ff5e99b45"
+    },
+    "policy/reliable/connector_reveal_geometry_v7.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_reveal_geometry_v7.py",
+      "sha256": "c4a783e2e9759c9922396e1cf2cd2fa2b0591f02e9ca4bb6ff3cb219550b21f2"
+    },
+    "policy/reliable/connector_reveal_geometry_v8.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_reveal_geometry_v8.py",
+      "sha256": "df799bb69fe11152cd3df4324de608faf9223ee733f1cef5e15d8782da7f2503"
+    },
+    "policy/reliable/connector_shared_roles_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/connector_shared_roles_v2.py",
+      "sha256": "109d06d2bb0280f67cbd91762c351c354e08e89b97a0289cf6440a8ffe26cdd2"
+    },
+    "policy/reliable/constructive_reference_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/constructive_reference_learner_v1.py",
+      "sha256": "9ea466cd76d5d65fd25eda60fcceb80c98a0a2b260b742c5800a5c4da215ad8e"
+    },
+    "policy/reliable/constructive_reference_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/constructive_reference_learner_v2.py",
+      "sha256": "e244a5b363786193cd1f11091075ca172e7a0ea6c32f5fc361439afd88d688ed"
+    },
+    "policy/reliable/constructive_tool_handoff_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/constructive_tool_handoff_v2.py",
+      "sha256": "2322ad68e5ce306405719b91711177451259ca6b083abe5d5e9fc29c92628b92"
+    },
+    "policy/reliable/contact_inquiry.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/contact_inquiry.py",
+      "sha256": "d71b9724c1c199588139a332eaa5f319f90fa9b265a09a8c75d766a85301c772"
+    },
+    "policy/reliable/context_inquiry_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/context_inquiry_learner_v1.py",
+      "sha256": "a0a2be917e30ea50acc52cea1cac781e50181902ba8bf7c9d16c6cd51e417b34"
+    },
+    "policy/reliable/control_hypotheses.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/control_hypotheses.py",
+      "sha256": "2dda53cffa924056fcb6d14c43a5e5bf11675f5aff0df06011a237382d8f97cd"
+    },
+    "policy/reliable/control_network_family_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/control_network_family_v1.py",
+      "sha256": "d89f81b66b8b634515db14caedbd390a333626c5176dbe07620d081a0e448dd2"
+    },
+    "policy/reliable/control_persistence_probe_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/control_persistence_probe_v1.py",
+      "sha256": "27b07f67bef2e7296f953ba7f12597d2e2072e131525578ae1b51eeec38fc9ff"
+    },
+    "policy/reliable/cooperative_peg_bridge_core_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_bridge_core_v2.py",
+      "sha256": "7ea6a93684f191a4d96897c60dceb37e4ad32081aa5990a5bb246e3edf37e115"
+    },
+    "policy/reliable/cooperative_peg_bridge_planner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_bridge_planner_v3.py",
+      "sha256": "5558aa64117cb35dbd56e68ba4142d26889eaf69029e8326acfa8b71d021a285"
+    },
+    "policy/reliable/cooperative_peg_joint_model_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_joint_model_v3.py",
+      "sha256": "dd20ae844c44339f44a6b3e365fc1fe96ead91051751e9c081510b2d4034ebec"
+    },
+    "policy/reliable/cooperative_peg_joint_model_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_joint_model_v4.py",
+      "sha256": "f37b7087eaeb2ff24413bb37117cc23daedd6249901b6255870f60a713e0bf8d"
+    },
+    "policy/reliable/cooperative_peg_learning_v13.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_learning_v13.py",
+      "sha256": "418670313c5f967cca8e93e053c33833d8319569da67b5efcd335796b0662fec"
+    },
+    "policy/reliable/cooperative_peg_learning_v15.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_learning_v15.py",
+      "sha256": "02b362598ac0efbdef92794066692e04e230cd1776d34d1bdf474232ce4db027"
+    },
+    "policy/reliable/cooperative_peg_model_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_model_v2.py",
+      "sha256": "41bfc51ebb381ddddad87d7e4cf63c75e478bf665d54e26061fc14b629b1ad38"
+    },
+    "policy/reliable/cooperative_peg_perception_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_perception_v5.py",
+      "sha256": "2ccf7e8424419c1391a5de17ac2ea2f9dc9ce3a6ebab6b018ed4bdd1ab78e029"
+    },
+    "policy/reliable/cooperative_peg_perception_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_perception_v6.py",
+      "sha256": "d161627fd31343c6e04a771ad1bf2b346df0930c67a69475deeb96a166ff1de5"
+    },
+    "policy/reliable/cooperative_peg_perception_v8.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_perception_v8.py",
+      "sha256": "07140f15c9ffa0c31e4259567d3ec5b75d84499e71f9aaac00dfe6f7078d63c1"
+    },
+    "policy/reliable/cooperative_peg_region_goals_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_region_goals_v1.py",
+      "sha256": "d9fcb20f76fda085718fbcb30563b09b830b08d0f9b05d63ecf83edf2064217a"
+    },
+    "policy/reliable/cooperative_peg_registration_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cooperative_peg_registration_v5.py",
+      "sha256": "a9ce9ae6e9d458380fab44df3ec1e4f8caff606d91349bf5a69fa0cd496af71d"
+    },
+    "policy/reliable/corridor_motion_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/corridor_motion_inquiry_v3.py",
+      "sha256": "53efd36b7db53ff6571582d80d5c5a2a35073d91f8a93b6b72cfdb3dd5797c28"
+    },
+    "policy/reliable/corridor_tile_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/corridor_tile_admission_v1.py",
+      "sha256": "fa07bbe317e410cf4dc5820a6ef63ff78e798b794a64ff212afa7400d8a7131d"
+    },
+    "policy/reliable/coupled_joint_relocation_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_joint_relocation_v2.py",
+      "sha256": "7291abd2c075928bd382cbd375a4445943839da98f1334c787b6cd4cd64559f8"
+    },
+    "policy/reliable/coupled_joint_relocation_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_joint_relocation_v3.py",
+      "sha256": "6d467730e9c466c9006e30bad7eacdceb48f125333a1e3721b93f3e2af315bea"
+    },
+    "policy/reliable/coupled_lattice_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_lattice_learner_v1.py",
+      "sha256": "0c251b997228c1b709d22e9a2480abd982c19d14940d33af8db7dc4fff6105e3"
+    },
+    "policy/reliable/coupled_marker_alignment_base_v12.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_marker_alignment_base_v12.py",
+      "sha256": "3e2b426fe0c0f92e8e8549d089daaf6c4edbd13837c894108a82564e89e94fd9"
+    },
+    "policy/reliable/coupled_marker_alignment_v13.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_marker_alignment_v13.py",
+      "sha256": "f71d814fd7f05aba84d2862bd64ffcb923ca4f04e68c255f639a8af6a6b147cc"
+    },
+    "policy/reliable/coupled_navigation_core_v10.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_core_v10.py",
+      "sha256": "dbec9b098b2786373fb34bc2579b2cd6c28f55c3c3ff706f8b9ccda7483e4bbd"
+    },
+    "policy/reliable/coupled_navigation_core_v9.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_core_v9.py",
+      "sha256": "da11c88c41bf72b0f2c437785ffed6e94c024a0623663ed813dd174074112154"
+    },
+    "policy/reliable/coupled_navigation_learner_v16.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_learner_v16.py",
+      "sha256": "0ea715f977a631a9f658649384de60d369339b18cb06a51857e27b1c90b62175"
+    },
+    "policy/reliable/coupled_navigation_learner_v17.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_learner_v17.py",
+      "sha256": "9108e05bc389a1680ff60dc7be2aeeff99c16b790fb2db7bdee53657981c6a16"
+    },
+    "policy/reliable/coupled_navigation_learner_v18.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_learner_v18.py",
+      "sha256": "3f3700bf13bce3d4b52b10f97d9a8b30b371f9b4bf82d080bfc994094825b3c0"
+    },
+    "policy/reliable/coupled_navigation_learner_v19.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_learner_v19.py",
+      "sha256": "fd3e6855619a34d51774f8086719f18ab10abb71a72facd5bcf509593c7ef697"
+    },
+    "policy/reliable/coupled_navigation_learner_v20.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_learner_v20.py",
+      "sha256": "81377cb941070cf8f602cbb740efa51b1b73fc465bf2a5b4cefa80eee31982a0"
+    },
+    "policy/reliable/coupled_navigation_learner_v21.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_learner_v21.py",
+      "sha256": "38c68610ee6cac244bf2adb1a6352292328ff31ef5a5c41b4fd7f7cf4f0ad87c"
+    },
+    "policy/reliable/coupled_navigation_learner_v23.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_learner_v23.py",
+      "sha256": "1f1d717afc2c7efd78e18e829ad55bde5bb867c9d95a8855cdf5dfead7c88f1b"
+    },
+    "policy/reliable/coupled_navigation_learner_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_learner_v5.py",
+      "sha256": "2be9f82a2ba442030a115978e94dafaa1c4912501e37979529c76da17142599d"
+    },
+    "policy/reliable/coupled_navigation_manipulation_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_navigation_manipulation_v2.py",
+      "sha256": "3a93ced1fc30ddcfbca5783635add10b2d18299b6668883c3ec3a15c2f0dbc9d"
+    },
+    "policy/reliable/coupled_panel_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_panel_inquiry_v2.py",
+      "sha256": "1e2945c86afcc98e67fc9855f329de5062ea04c6d9c5e1a7fd75794fa5de602b"
+    },
+    "policy/reliable/coupled_panel_scene_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_panel_scene_v2.py",
+      "sha256": "f87abbf2e2e0e58cf5406a0a97dba1d0a834099eecee3b0139fbbe0c2ac26dc5"
+    },
+    "policy/reliable/coupled_peg_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_peg_inquiry_v3.py",
+      "sha256": "e97d92d25470709bfbd0ec0712d4382b0b2f85023f54c7c576f1d7f9f022d48c"
+    },
+    "policy/reliable/coupled_peg_model_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_peg_model_v3.py",
+      "sha256": "1982d72ae137bd74e4b511373164e80572002fcaa5f22ec335644a3ed9a6293d"
+    },
+    "policy/reliable/coupled_pressure_model_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_pressure_model_v1.py",
+      "sha256": "f33a18a61726756cbdf7e8c72ef6b917c94fd5c33a6cd485296f770d68422937"
+    },
+    "policy/reliable/coupled_rods_inquiry_v14.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_rods_inquiry_v14.py",
+      "sha256": "4754698abd5c7f6b08867f24c98ef3c23e0efc441f93a4cb29ca69f8afb5066b"
+    },
+    "policy/reliable/coupled_rods_scene_v12.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/coupled_rods_scene_v12.py",
+      "sha256": "8e0255ba4d572a26969e9e2dc9434d39cb2c6f8c2621dc85347b25297757f707"
+    },
+    "policy/reliable/cross_alignment_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_alignment_admission_v1.py",
+      "sha256": "e8dd5549ccb0c123222e3f77ae5d78fb2838bf7fdd680284c3dbaafe08230a8d"
+    },
+    "policy/reliable/cross_alignment_learner_v20.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_alignment_learner_v20.py",
+      "sha256": "4b8afd658e229008dd1d4d7cc04f53556f6c654c5d1c32a11e42a270b6272b0f"
+    },
+    "policy/reliable/cross_alignment_learner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_alignment_learner_v3.py",
+      "sha256": "a665a177a3996899c5a6ff2f0d33ea23591e405da69f5f56f5a240295296766d"
+    },
+    "policy/reliable/cross_color_surface_model_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_color_surface_model_v2.py",
+      "sha256": "ae2429f565226cbf1464cd968d5741d0f200759e4e9775bdf84259d90975c683"
+    },
+    "policy/reliable/cross_color_surface_portable_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_color_surface_portable_v1.py",
+      "sha256": "cdbce3c440116f1e94c2104be73b99ee5c2ef6a4cb4ac58a773ed4f52a330a1d"
+    },
+    "policy/reliable/cross_shape_geometry_portable_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_shape_geometry_portable_v1.py",
+      "sha256": "be74d811340f561b56c1b2f2c2d83d2912bad178bcdbede97efc727b5f333051"
+    },
+    "policy/reliable/cross_shape_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_shape_geometry_v1.py",
+      "sha256": "75a04712f2193b694cb5d595e1d9d5e162b3d88ef0bdad1a0c87a218722485e4"
+    },
+    "policy/reliable/cross_shape_geometry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_shape_geometry_v2.py",
+      "sha256": "be74d811340f561b56c1b2f2c2d83d2912bad178bcdbede97efc727b5f333051"
+    },
+    "policy/reliable/cross_shared_goal_learner_v17.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_shared_goal_learner_v17.py",
+      "sha256": "bc836ceb5441fe952259e49bcf3c8b634e9b6fb407f2cf7b7bd7572cc36a58bc"
+    },
+    "policy/reliable/cross_temporal_identity_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cross_temporal_identity_v4.py",
+      "sha256": "9cfd228ab32cfad3de2ee2e106c8a22e2e59abf7a6d67b4fd0ec3d09198a3163"
+    },
+    "policy/reliable/cycle_feasible_program_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cycle_feasible_program_learner.py",
+      "sha256": "aadcbf9ac1f3458c001b7eca387409c28d969779accd0767893b09a6a9a73b79"
+    },
+    "policy/reliable/cycle_feasible_word_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cycle_feasible_word_learner.py",
+      "sha256": "20b6d2f00ffab09dea7eba914dcc6ae55bbc6e7710c7704c0e3d347cbe91ecf6"
+    },
+    "policy/reliable/cyclic_perimeter_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/cyclic_perimeter_geometry_v1.py",
+      "sha256": "e56a45097590633df0eed49546fc198aa67e6a7e45c3590a5068d1ac6b6be26d"
+    },
+    "policy/reliable/decorated_lattice_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/decorated_lattice_learner_v2.py",
+      "sha256": "746d7ca89a9cc3c2ef19668702620498e4ca7aebebc071a0ae63c0b0d5767668"
+    },
+    "policy/reliable/decorated_lattice_perception_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/decorated_lattice_perception_v2.py",
+      "sha256": "f9c56e0e79f539c1364261657eb9e5dfd5b3828a4ba15a9ef051cbf2de38bd50"
+    },
+    "policy/reliable/decorated_nested_perception_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/decorated_nested_perception_v2.py",
+      "sha256": "ec49bed29dc03fd98efadb8bfb224a51b0fb3afea6b7c6bc7688616614a3b6d2"
+    },
+    "policy/reliable/decorated_peg_carrier_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/decorated_peg_carrier_v1.py",
+      "sha256": "25f3cb067e8d4d6f95f4acc07fea942cc00c80d62e4cfbd7f4ac39035456a0b4"
+    },
+    "policy/reliable/directional_encounter_learner_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/directional_encounter_learner_v6.py",
+      "sha256": "571d04f118eff7b1bb2467f62830d1ed73c587e6d1b2c235b496c8401b910e21"
+    },
+    "policy/reliable/disjoint_tool_word_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/disjoint_tool_word_learner.py",
+      "sha256": "f07fc2e72bcc3ce6320113498e71cd694df112513fae9fc9c551edd88c9bf016"
+    },
+    "policy/reliable/editable_program_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/editable_program_learner.py",
+      "sha256": "61024883e77fc40ff56b48927d5702787e2a25dcf64e12c600bf8c16f97608a3"
+    },
+    "policy/reliable/editable_word_programs.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/editable_word_programs.py",
+      "sha256": "73766570e71fadcf746fddf9f24a2679c7b929ca500e881e2e8115f3a8211138"
+    },
+    "policy/reliable/elastic_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/elastic_admission_v1.py",
+      "sha256": "c46542be5493c94dce9a3464e3df3f04e7d05c654d5403f321ff751343168665"
+    },
+    "policy/reliable/elastic_figure_model_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/elastic_figure_model_v1.py",
+      "sha256": "29055c62abb2d40882f84574c5c087dd3a1775e45b3585b5add6a119601d04c7"
+    },
+    "policy/reliable/elastic_figure_model_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/elastic_figure_model_v3.py",
+      "sha256": "59bf186b066a48e6f9a088cca014423ae8515914f0c167dbde9cd17137a7f384"
+    },
+    "policy/reliable/elastic_goal_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/elastic_goal_inquiry_v3.py",
+      "sha256": "e40eef0e7aec8e98c4ebb0d11f26d80cd2ba6ba5e6215a91b2410d779d67a9f1"
+    },
+    "policy/reliable/endpoint_admission_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/endpoint_admission_v3.py",
+      "sha256": "b8545e49b608d6861f5b97259d7f70a30300b7bee4833ec2b98b5fd5275099c6"
+    },
+    "policy/reliable/endpoint_admission_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/endpoint_admission_v4.py",
+      "sha256": "f0dcdc9e7b28a217c6c574558f63c1fd39aae8e6a76480e036c41bdd2bbd01fe"
+    },
+    "policy/reliable/endpoint_admission_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/endpoint_admission_v5.py",
+      "sha256": "45df3123418c2219ea5c1d135330e8fd56558a7b12bfd991db7b54d615247fad"
+    },
+    "policy/reliable/endpoint_extension_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/endpoint_extension_inquiry_v2.py",
+      "sha256": "1225a088e55ffc6f7f7c6081681d447aa3da18c4e62f2a4dbf7991f5a0e5ece2"
+    },
+    "policy/reliable/endpoint_visible_parts_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/endpoint_visible_parts_v1.py",
+      "sha256": "305181f6e7d880ce13a2e51bcb1e8b24f5e59611e3a867e592fac04bcf82bb18"
+    },
+    "policy/reliable/evidence.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/evidence.py",
+      "sha256": "1f21859fcd3229bf6e14cb4560d2a2cfe544b7a1da26c0f46b84962066d95a12"
+    },
+    "policy/reliable/fragmentary_goal_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/fragmentary_goal_geometry_v1.py",
+      "sha256": "d8ef04d8a8fb593c1b6d0d7230dc8ebf7508c61382867d06878eef377c047af5"
+    },
+    "policy/reliable/fused_peg_carriers_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/fused_peg_carriers_v1.py",
+      "sha256": "753f01c22675a0acd53aad2b26f11b90f5f35da3a78ff38ded5a9a8d15bc5c88"
+    },
+    "policy/reliable/global_correspondence_base_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/global_correspondence_base_v1.py",
+      "sha256": "c9ee106eb6964f56003feadd2a3526fe5446e45f55cf2fb177c03e319465f7da"
+    },
+    "policy/reliable/global_correspondence_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/global_correspondence_learner_v1.py",
+      "sha256": "7f468365c80830dcf39369138506948d77450046db6a653821608f2244b908d3"
+    },
+    "policy/reliable/global_token_correspondence_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/global_token_correspondence_v1.py",
+      "sha256": "a5c36a30466c6a8aabfe5ae9c7a954e5e1faa27f3e7139b28ae54a8658c7e9cf"
+    },
+    "policy/reliable/graph_semantic_digest_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/graph_semantic_digest_v2.py",
+      "sha256": "06ad3e2b25dc6664dc80929bc79449c8390562a14f44509ded4e5363a95c9ac1"
+    },
+    "policy/reliable/graph_state_semantics_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/graph_state_semantics_v3.py",
+      "sha256": "08f8967578ba678c8c38584bad1ec80948dadf5748513eb2f14412757edfd124"
+    },
+    "policy/reliable/group_centroid_admission_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/group_centroid_admission_v2.py",
+      "sha256": "22c216dc419a549fad0488aa32b33e282fbd8bae58431e1e5e5d02cb65d6dd78"
+    },
+    "policy/reliable/group_centroid_learner_v13.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/group_centroid_learner_v13.py",
+      "sha256": "5a73f11ab6a722a94630ac3b1bb67e9fc81dfab5209d84190fdf9c63bc6f1c6b"
+    },
+    "policy/reliable/group_centroid_learner_v14.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/group_centroid_learner_v14.py",
+      "sha256": "eb03bab74ab23ca335397ee44145cf98d0baadf48573e74e5cb3ca9f3d80b5a2"
+    },
+    "policy/reliable/group_symbolic_scene_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/group_symbolic_scene_v1.py",
+      "sha256": "614e30d948eb49a9dabdeb52b46d362a7fb0e7753883c2df0d2ea16afb29993b"
+    },
+    "policy/reliable/hub_rod_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/hub_rod_inquiry_v2.py",
+      "sha256": "f43d5cde494447a96f966ac1b034b1c589038d44153a083b83fffda53b00a0d5"
+    },
+    "policy/reliable/hub_rod_model_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/hub_rod_model_v2.py",
+      "sha256": "25edbad907b9eaacbbe35b7b20f4927be34210c5b32f0fa85f6175d6cf84f127"
+    },
+    "policy/reliable/hub_rod_scene_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/hub_rod_scene_v2.py",
+      "sha256": "2e828eed72220fe5b03a60c4ba3a32a762cf9a9b1abad81db8f6a41637248dad"
+    },
+    "policy/reliable/indirect_word_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/indirect_word_geometry_v1.py",
+      "sha256": "765e00021221cf3ccc4ed3d9d89732532c384e456a9a6a5cfc30bbe8c6ef6c96"
+    },
+    "policy/reliable/indirect_word_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/indirect_word_learner_v1.py",
+      "sha256": "5264ad5d62cbc7933cbb3ef995e48a0bcedff1f9eb27b3d0e96e32ffa52312d6"
+    },
+    "policy/reliable/inquiry_retry_session.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/inquiry_retry_session.py",
+      "sha256": "b36503f8d587fbea43ccddf29f061f72ae85dcc65724c60f7addcd83d1c0135e"
+    },
+    "policy/reliable/joint_compartment_planning_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/joint_compartment_planning_v4.py",
+      "sha256": "abb9649904a853e601d38266c56540834eca0b212f1b8471f7b47f5808c0390e"
+    },
+    "policy/reliable/key_control_clock_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_control_clock_v1.py",
+      "sha256": "e3a7a6a016f4009fcb530dbc9dc87b7a137ce76371245ee751d71f8a16be5554"
+    },
+    "policy/reliable/key_control_clock_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_control_clock_v2.py",
+      "sha256": "5e913ffe32c41801bf35629dc91e108383e4d60d6bb0da2dd01e5695dc6c6356"
+    },
+    "policy/reliable/key_control_clock_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_control_clock_v3.py",
+      "sha256": "e5b176795be31cb6d982c72f7a2e0d210a44a455a175f315b90a948b05ace4dd"
+    },
+    "policy/reliable/key_glyph_learning_v20.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_glyph_learning_v20.py",
+      "sha256": "4b94bf685d72589bc3cd951373a02751c1d67033d5f6292aea17ffe747e56784"
+    },
+    "policy/reliable/key_glyph_learning_v23.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_glyph_learning_v23.py",
+      "sha256": "e08f33139e8d9a4e54180ceddda4368c1cbea19d2bc0223af31b4edc05553246"
+    },
+    "policy/reliable/key_motion_frontier_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_motion_frontier_v1.py",
+      "sha256": "ea0e2c071272de766c708d3647cc64c5f4d208cabdbeb897c7a2a1c086ce3854"
+    },
+    "policy/reliable/key_planning_feasibility_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_planning_feasibility_v1.py",
+      "sha256": "1a391b4e305d3858666a43de225c635eeef75314a10e97b7899832cdbea34fcd"
+    },
+    "policy/reliable/key_resource_planning_v18.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_resource_planning_v18.py",
+      "sha256": "c9f69e4a3dada5ce5e23c1167d0edca5c4a59528351d93938ff8009b4ad5355e"
+    },
+    "policy/reliable/key_resource_planning_v19.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/key_resource_planning_v19.py",
+      "sha256": "e96989bc28362f431d2d60d95e804b581dcf5cc02bb555d365095868c3911c20"
+    },
+    "policy/reliable/knowledge.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/knowledge.py",
+      "sha256": "87a5dd67544a71a493b30a292c4c1869ee47c4b70386d7a2540587ef2736a1da"
+    },
+    "policy/reliable/learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/learner.py",
+      "sha256": "f559a0c6e940f477ff69212004293c681c3da5a2aca6af90bd543333046cabd1"
+    },
+    "policy/reliable/learning_coverage_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/learning_coverage_admission_v1.py",
+      "sha256": "3ff7fe700334a78a01e809fb79f2a809868ffa4c103e1a1b38d79526014a8532"
+    },
+    "policy/reliable/learning_coverage_admission_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/learning_coverage_admission_v2.py",
+      "sha256": "917e446320ec420f48b6b71edee964124b07e8e192aa8db29d34e44235a5bc1c"
+    },
+    "policy/reliable/learning_coverage_admission_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/learning_coverage_admission_v3.py",
+      "sha256": "84228f675eaa08f1463a414c80ff87990b28c2b125e177e55180414924c66625"
+    },
+    "policy/reliable/learning_coverage_admission_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/learning_coverage_admission_v4.py",
+      "sha256": "0287bceb322be28bebd108ee00773cb383c01420f081340d0d6260d1152ec20e"
+    },
+    "policy/reliable/legacy_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/legacy_learner.py",
+      "sha256": "a2a7005a34e2cb932d26d7b1192c20e821a115af4f2a8d993b110dc25753da7f"
+    },
+    "policy/reliable/literal_word_goals.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/literal_word_goals.py",
+      "sha256": "10810d7e6a0365c30fcf9c54e5b5bd452af9bdbe6d5db799a6c2005de3f3c92b"
+    },
+    "policy/reliable/literal_word_rows.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/literal_word_rows.py",
+      "sha256": "f4a6d5cdb38d09823b1474146fc85921d3febe7d558a8b5a1c58e6ad2f7d18ef"
+    },
+    "policy/reliable/local_token_correspondence_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/local_token_correspondence_v1.py",
+      "sha256": "e661cb554549aca7968a921298a29b143fe582e9cc787302c3e45e3812acff21"
+    },
+    "policy/reliable/marker_compartment_binding_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/marker_compartment_binding_v2.py",
+      "sha256": "1f4dd6b8b9bd389705096df45fa60a468381003d87bd5afbcebea571464763d2"
+    },
+    "policy/reliable/matrix_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_admission_v1.py",
+      "sha256": "aee327b26342ca091731a320f5b06318a0630b6cc04769240f4b5fccafb8570c"
+    },
+    "policy/reliable/matrix_conditional_program_v13.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_conditional_program_v13.py",
+      "sha256": "0a596632667b632485bf59cab6b16bd7bb50fead7da52caaf203549c623e8802"
+    },
+    "policy/reliable/matrix_conditional_program_v14.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_conditional_program_v14.py",
+      "sha256": "d12bdb6e5332ccd30f6f659c9d6fbd89a16ff72e3d5907991e6711b3a53ea165"
+    },
+    "policy/reliable/matrix_effect_goal_transfer_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_effect_goal_transfer_v3.py",
+      "sha256": "119766b20ce852ca98f9ebb1e271265d7e48900c5ab69ea0c4bb4be58dd0dd3d"
+    },
+    "policy/reliable/matrix_intermediate_learner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_intermediate_learner_v3.py",
+      "sha256": "46b3286a44ef271b740673465db7e92ba6b476537089bc6a5f3bfd54b7487786"
+    },
+    "policy/reliable/matrix_intermediate_learner_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_intermediate_learner_v4.py",
+      "sha256": "5290951eaf114062b9f9b7908fc81e03ca70c27f4569c6375722ba045601c6a9"
+    },
+    "policy/reliable/matrix_local_body_crop_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_local_body_crop_v2.py",
+      "sha256": "f19bfb3c61193fdaf2329b0ae0bcbdb4bd35dacd01cb10e730ee0a562142511d"
+    },
+    "policy/reliable/matrix_motion_learner_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_motion_learner_v6.py",
+      "sha256": "1cd1a003d9d745e7a0e89e434dec551604a326f22cd7078f2dd52d0c77fee2c2"
+    },
+    "policy/reliable/matrix_program_alternatives_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_program_alternatives_v5.py",
+      "sha256": "deeba8b070c1dc14a23fb0d1fd85fe148c3ccc4edc5112eca45656dce8536b1b"
+    },
+    "policy/reliable/matrix_program_bank_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_program_bank_v2.py",
+      "sha256": "ee7373baa8f4717a6b544b0014f4240797d7aceb0a6de9b27ab124bfd2274375"
+    },
+    "policy/reliable/matrix_program_composition_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_program_composition_v4.py",
+      "sha256": "ee9ce95b0575fe2597ae4ea4e235186d8c43dd75186afe9fb9067a0b38c30840"
+    },
+    "policy/reliable/matrix_program_effect_memory_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_program_effect_memory_v6.py",
+      "sha256": "7ebe91fcb786c4d544d7720cb10062836d651d6200641ab45426a85c608a0244"
+    },
+    "policy/reliable/matrix_ranged_geometry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_ranged_geometry_v3.py",
+      "sha256": "88c55642b14101a0c2e30d0296f665ce9c33854c44497535e09f0190b179b228"
+    },
+    "policy/reliable/matrix_ranged_terminal_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_ranged_terminal_v3.py",
+      "sha256": "e6538997f56be7dc3a2c98b545904c1a233bea8bfcd68a826cc3632bfbf05390"
+    },
+    "policy/reliable/matrix_reference_cues_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_reference_cues_v1.py",
+      "sha256": "4ae2cd6344d6f5db9b00eb81e9c74aa08b1662767f57a3925d4f05081cf025e9"
+    },
+    "policy/reliable/matrix_reference_cues_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_reference_cues_v2.py",
+      "sha256": "fd0690aa1a91561613a38830599158d9434d4c288c29d2f9f0c9433133cc001d"
+    },
+    "policy/reliable/matrix_reference_intermediate_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_reference_intermediate_v2.py",
+      "sha256": "b15e3d2194a871db3841bf6d07902d019d751eeba570777a78ad6c95c6e5f2e3"
+    },
+    "policy/reliable/matrix_reference_intermediate_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_reference_intermediate_v3.py",
+      "sha256": "5e076268fd5b0bcbdf54db60f1f2c1edffb4d8f1c7b818b72b4c2f349f2b9ff9"
+    },
+    "policy/reliable/matrix_reference_intermediate_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_reference_intermediate_v4.py",
+      "sha256": "659ba1db5cdb97ac44cd152961571329277fd9b712bd87a78ad0174521593178"
+    },
+    "policy/reliable/matrix_reference_intermediate_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_reference_intermediate_v5.py",
+      "sha256": "126457b9806aa63393f4803ccfdf175c47043b87d3676bcbc34dc34685f76e81"
+    },
+    "policy/reliable/matrix_reference_programs_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_reference_programs_v1.py",
+      "sha256": "9f371c11fe898694f9459c53e214b8d465bd6da981ef35332c4f471e09a52885"
+    },
+    "policy/reliable/matrix_relocation_goal_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_relocation_goal_v2.py",
+      "sha256": "933e1fa95dc76a6eb117ed9e5897ba8de68e693e298f389715dae4c2966efb5c"
+    },
+    "policy/reliable/matrix_remaining_interactions_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_remaining_interactions_v1.py",
+      "sha256": "1eb0d46b5b95cca789245913ba4980b569b2999acc3f318f853ac1a351f644cd"
+    },
+    "policy/reliable/matrix_size_precondition_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_size_precondition_v4.py",
+      "sha256": "0d54fe2931ff1a243fc4e6654376526a9b31224bbc424b06ea3f811e9a22d01c"
+    },
+    "policy/reliable/matrix_skill_graph_v7.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/matrix_skill_graph_v7.py",
+      "sha256": "bef65d4e15dbbdceb34e7e4835aa52f5dec5fd4dfb0ac507242a6302b2d6825b"
+    },
+    "policy/reliable/midpoint_relational_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/midpoint_relational_learner_v1.py",
+      "sha256": "15cfbcd8dd22cfea7a7c3f040a249abe9d54dc7852f6710172eeb8504abf8ade"
+    },
+    "policy/reliable/modal_eight_parts_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/modal_eight_parts_v1.py",
+      "sha256": "26fac6244ec909b0a01e3686d938e3c9e7afa94c1f5ee1f56dcae2a09f0d4e42"
+    },
+    "policy/reliable/modal_reflection_inquiry_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/modal_reflection_inquiry_v5.py",
+      "sha256": "2d4cdef148917b32fd8a6effbf26bfaeaa3a4a040139378df9484f37763e6d05"
+    },
+    "policy/reliable/modal_scene_v12.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/modal_scene_v12.py",
+      "sha256": "e31d2e9032251fcb440eac8f67dd1e1a8c942af0797834347c87a45ad72949a6"
+    },
+    "policy/reliable/modal_scene_v14.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/modal_scene_v14.py",
+      "sha256": "f4153335f1d2d460768c4f037442b684678ed1c067c9f3b4d9d3e7d0993b77a7"
+    },
+    "policy/reliable/modal_scene_v7.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/modal_scene_v7.py",
+      "sha256": "ae14ad0d931e3726e749ba16e68c53e535c22041937d6a63548898ada77d1414"
+    },
+    "policy/reliable/modal_visible_parts_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/modal_visible_parts_v1.py",
+      "sha256": "305181f6e7d880ce13a2e51bcb1e8b24f5e59611e3a867e592fac04bcf82bb18"
+    },
+    "policy/reliable/moving_pivot_peg_learning_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/moving_pivot_peg_learning_v2.py",
+      "sha256": "79b74e0cfaaaa0cf7e9623a150e9df1c4bfb96112a60e8303db7174c70bd764c"
+    },
+    "policy/reliable/multi_endpoint_inquiry_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/multi_endpoint_inquiry_v5.py",
+      "sha256": "9c17bbb085ecb5e706933066fee3062b81bf9fcd77761b79df22930040996c6f"
+    },
+    "policy/reliable/multi_endpoint_scene_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/multi_endpoint_scene_v5.py",
+      "sha256": "1759f9c8ff61066355288502624c414797247be75998de1665fb266c24464873"
+    },
+    "policy/reliable/multibody_program_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/multibody_program_admission_v1.py",
+      "sha256": "b37abf1d5c1c4125738130cdc700a8b9fcbbc854509442e4521de789a1599826"
+    },
+    "policy/reliable/multibody_program_admission_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/multibody_program_admission_v2.py",
+      "sha256": "47ac6f1735cf3d511848973a14641a9ef957d4d8695435cb12e4378c51893ae8"
+    },
+    "policy/reliable/multibody_program_admission_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/multibody_program_admission_v3.py",
+      "sha256": "2ffdd9d5225577ab7dcf945f0ab6f23c81cc97ca83afa210ac57fca1ff07d1ec"
+    },
+    "policy/reliable/multibody_program_admission_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/multibody_program_admission_v4.py",
+      "sha256": "5f8a7ba0909b5d9f943bcb64b123a92ef4c9f42e6497bad1b076d22a969e14bd"
+    },
+    "policy/reliable/multibody_program_admission_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/multibody_program_admission_v5.py",
+      "sha256": "23ce2a049f158de3a8289d4eab159751146cb85d7e4caa5e659b0f2be8fd052f"
+    },
+    "policy/reliable/nested_constraint_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/nested_constraint_learner_v2.py",
+      "sha256": "f28744939bd7d8909eb7e013df76d074f72293908b5617075061cb49e07b3955"
+    },
+    "policy/reliable/nested_pattern_hypotheses.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/nested_pattern_hypotheses.py",
+      "sha256": "c1d61d88ed390fa698b1fd7125a7ab0e0db5a3489638d5da7938588ce79bc6cd"
+    },
+    "policy/reliable/nested_pattern_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/nested_pattern_learner.py",
+      "sha256": "506188aae4d9a487f92045f5d600b9747a62ef5d2196624582f17f5f0b5f16fe"
+    },
+    "policy/reliable/nested_pattern_perception.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/nested_pattern_perception.py",
+      "sha256": "1f60a57dcc9cae444b3a9e375e260d5ff631887a3e56083502464802334ca254"
+    },
+    "policy/reliable/nested_sequence_inquiry_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/nested_sequence_inquiry_v6.py",
+      "sha256": "6616b6a6883cdc920e8cfe828a07f75a37536d4546300adc3df10d585adc8e98"
+    },
+    "policy/reliable/nested_sequence_model_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/nested_sequence_model_v3.py",
+      "sha256": "d73ffd02567d99f81aeecbe6c10042b9ff6cbd0bb546aa66634c2283f18f2dfb"
+    },
+    "policy/reliable/observed_action_repository.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_action_repository.py",
+      "sha256": "2c7020c62aee7801e8e09eed7c8b95b83bde79810c2af89f60e30e44b147086a"
+    },
+    "policy/reliable/observed_body_completion.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_body_completion.py",
+      "sha256": "d644d85d2480d9e22b39a684f2d4271a0800c31624525e1d821eaa290599dd61"
+    },
+    "policy/reliable/observed_compartments_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_compartments_v2.py",
+      "sha256": "ac18b1a97260cbfef09b426ca85314b1ecbcce590bb25d3015bbdab69f4dc2f4"
+    },
+    "policy/reliable/observed_composed_interface.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_composed_interface.py",
+      "sha256": "0b32e3f7e5fed000792ba45e14a6d4711a6b65dc6360d579ad677aebe07c2a55"
+    },
+    "policy/reliable/observed_edit_completion_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_edit_completion_v1.py",
+      "sha256": "ffd784866faa8bde3565215f05e1ceea219c3ba0320211889a518cd693453533"
+    },
+    "policy/reliable/observed_exchange_tool_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_exchange_tool_learner.py",
+      "sha256": "96171e997ae2a3af3177cb712ce488c67bc69cefd23a51b4c6dbad63891283ed"
+    },
+    "policy/reliable/observed_joint_routes_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_joint_routes_v1.py",
+      "sha256": "dda40fbd2d57aad1b101a47f328221fa4cac9e3e3d7b6e25e494e95030b24af2"
+    },
+    "policy/reliable/observed_occlusion_hypotheses.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_occlusion_hypotheses.py",
+      "sha256": "e47792a9a1f293688a55756821f0a90f3d324550b211de20372b27ecd9ad103a"
+    },
+    "policy/reliable/observed_program_completion_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_program_completion_v1.py",
+      "sha256": "5559b6777c47aba12c1323aafbdd3e9db1e73843d4c733c5ac5b6aa9a85f5890"
+    },
+    "policy/reliable/observed_transport_memory_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_transport_memory_v1.py",
+      "sha256": "6b47dab0309bc1541f350428536d9716065044886d94532cfb197532bb775b84"
+    },
+    "policy/reliable/observed_transport_memory_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_transport_memory_v2.py",
+      "sha256": "2e18dde3f06b985202477402fb91bd5a2c08d95899cd0d196e0d90375addf6b3"
+    },
+    "policy/reliable/observed_transport_memory_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_transport_memory_v3.py",
+      "sha256": "4661cde9b2f80510bda96d6947621dfd5680289bae4ec74e7729faf5da8e3f4c"
+    },
+    "policy/reliable/observed_transport_memory_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_transport_memory_v4.py",
+      "sha256": "a7fdeb021695d1a80a31a64c232e50b9329b071756c41c9902a0d57e570aa1bc"
+    },
+    "policy/reliable/observed_viewport_memory_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_viewport_memory_v1.py",
+      "sha256": "fb7e737d1558a76e5d38bb676fc1703a8d1ec0f01eeabba84084dc532064a89c"
+    },
+    "policy/reliable/observed_viewport_memory_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_viewport_memory_v3.py",
+      "sha256": "43693bd029a4ee6d801bde055a7583bfc59e330fb604e542e55ade9618e1909d"
+    },
+    "policy/reliable/observed_viewport_memory_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/observed_viewport_memory_v4.py",
+      "sha256": "d4179f94407ac59fbcb0e5f09f532c429ea129100b301b85a66dc5a090933b9f"
+    },
+    "policy/reliable/occluded_figure_fit_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/occluded_figure_fit_v1.py",
+      "sha256": "e3dbbf5b4d5b08c77db2061997009252116d078b61e4fc7ddb3b4acaddcd4775"
+    },
+    "policy/reliable/optimistic_correspondence_handoff_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/optimistic_correspondence_handoff_v1.py",
+      "sha256": "94555c45dc474d84d22033ddb3c93d6ed5152e82aa54d732f7c2ef80867bbf6f"
+    },
+    "policy/reliable/orientable_endpoint_scene_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/orientable_endpoint_scene_v2.py",
+      "sha256": "dee03cfa0193d9f393c2e498a15b6860e6477c9bb66344769bf6f12a4a248a2a"
+    },
+    "policy/reliable/orientable_endpoint_scene_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/orientable_endpoint_scene_v4.py",
+      "sha256": "394bfdadef1a94e46652d9eb35d7268eb61b29b7b842286801b88ed04e48d711"
+    },
+    "policy/reliable/paired_carrier_geometry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/paired_carrier_geometry_v2.py",
+      "sha256": "8d99cce230d02bc57730c4b60690dc3f19a81e43774bcac6793331bd295c9aa6"
+    },
+    "policy/reliable/paired_outline_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/paired_outline_inquiry_v3.py",
+      "sha256": "0154245318371b608d700b74aaaa6aa9466ca0e5767484b84cd95b68b177a331"
+    },
+    "policy/reliable/panel_chain_hypotheses.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/panel_chain_hypotheses.py",
+      "sha256": "b48d3a38e920005fb6e411710212681f12581471f81323db4bbb6187209e8deb"
+    },
+    "policy/reliable/panel_chain_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/panel_chain_learner.py",
+      "sha256": "fa70fca2a28263d9b9a48ed57cd4d5a6ba6870867313c50fa417d51922ef1f92"
+    },
+    "policy/reliable/panel_control_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/panel_control_learner.py",
+      "sha256": "3a932e79009e0d5cc8fc3d2686409fdcdc2f3e887a5a44438588a75c6f088fdd"
+    },
+    "policy/reliable/panel_control_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/panel_control_learner_v2.py",
+      "sha256": "d3821c11632b0f93943a1cc501fa5c1ddc4df6bd61ddfa8caa47e11d81bbd591"
+    },
+    "policy/reliable/panel_hypotheses_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/panel_hypotheses_v2.py",
+      "sha256": "51b174a49a0b38348192a18f013e19e272baafaf7519fc7b7113eaf08234952c"
+    },
+    "policy/reliable/panel_sequence_hypotheses.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/panel_sequence_hypotheses.py",
+      "sha256": "75b91e3f5910765d2ad3585a519c3e0ace1422cb05fd5bca36ea434d6ad3a5a2"
+    },
+    "policy/reliable/panel_word_hypotheses.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/panel_word_hypotheses.py",
+      "sha256": "792b37117aa60a0f10ef3fd61560d10a1efdca044b917458edaf0f8e69bda52e"
+    },
+    "policy/reliable/panel_word_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/panel_word_learner.py",
+      "sha256": "c68eddefd581ac0828eff4d37d50a5add77740d365782ab8d8b69b42c9bfc4c7"
+    },
+    "policy/reliable/parallel_context_learner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/parallel_context_learner_v3.py",
+      "sha256": "4ac647882b3e31962cfd1c8485bac1f34faeb7b6a1a2afb69d71d061829d4125"
+    },
+    "policy/reliable/parallel_model_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/parallel_model_learner_v1.py",
+      "sha256": "23f309430f2faf9cd100a78c85acd5e7b5d653e749cdb3231ce5d8b2e4ab573d"
+    },
+    "policy/reliable/parallel_optimistic_model_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/parallel_optimistic_model_v3.py",
+      "sha256": "5d963faeef7f8e11bfdf5f4cd0731fa5674973ee099ed0ec644697b487cd81e7"
+    },
+    "policy/reliable/parallel_track_programs_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/parallel_track_programs_v1.py",
+      "sha256": "538064142782f2735d04a0bb322a7d5fd407f61e131df0b58297a3ec5163a54d"
+    },
+    "policy/reliable/partial_nested_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/partial_nested_learner.py",
+      "sha256": "6fd3487373dc6d058a8b76f03eae7305b6ba7f42f23d7c50f20a89200ea04f83"
+    },
+    "policy/reliable/partial_nested_perception.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/partial_nested_perception.py",
+      "sha256": "231501a9fd1797b1f870b72c84bf5d26bbfe44e065267392f68c748f2c1c4b94"
+    },
+    "policy/reliable/passive_macro_planner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/passive_macro_planner_v3.py",
+      "sha256": "eca3a67257be20c536c24a41999bcc26e3100da61ae012660a5e68f0299ecef6"
+    },
+    "policy/reliable/passive_shape_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/passive_shape_geometry_v1.py",
+      "sha256": "b56889632a1690caf98e6b5e8855d9562b450bced87e4c1927c6b6bf015f3bb2"
+    },
+    "policy/reliable/peg_carrier_templates_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/peg_carrier_templates_v1.py",
+      "sha256": "2b181a959dd4e4de7a8234abf9902842e1c534c7e876604a09610f17b75578b3"
+    },
+    "policy/reliable/peg_jump_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/peg_jump_inquiry_v2.py",
+      "sha256": "f45a5d4d6a4309b7c5a660e4d059c4388467d3741c6b323c414b38fb79d3939d"
+    },
+    "policy/reliable/peg_world_memory_v12.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/peg_world_memory_v12.py",
+      "sha256": "ff0960ac37a5909de9b3490f2267103d5d69f3a91b7ea71070b9b3040cc9211f"
+    },
+    "policy/reliable/peg_world_memory_v13.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/peg_world_memory_v13.py",
+      "sha256": "e8435b1c970a556bfb89b4d76abda9f31984b121a0fe27e7c17ea33c56e722f4"
+    },
+    "policy/reliable/peg_world_memory_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/peg_world_memory_v4.py",
+      "sha256": "a269931a3b4720e82a2f66e44c4f3fb3860863b07cbc51b5d1b7721e25aac63b"
+    },
+    "policy/reliable/peg_world_memory_v8.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/peg_world_memory_v8.py",
+      "sha256": "ba53dce2f14930c2bc873728ae0c1138bedfb089ec902dea220546ec16cdb75b"
+    },
+    "policy/reliable/peg_world_memory_v9.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/peg_world_memory_v9.py",
+      "sha256": "10935f01a8960803b370f4b077abcdd9d43898e66daf42c860477c032766e56d"
+    },
+    "policy/reliable/phase_effect_memory.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/phase_effect_memory.py",
+      "sha256": "ac55920ed3deed75964e97e7f4df5c63c61ab08487af08097f0d91437c24974e"
+    },
+    "policy/reliable/phase_planner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/phase_planner.py",
+      "sha256": "5c4063c67b89e785931bed11a1f4f1bde60d39115ef053d2f046337b07656d5b"
+    },
+    "policy/reliable/phase_stream.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/phase_stream.py",
+      "sha256": "68a946e85633458d857304c1b93e1be7f5f4b66c9c6e6d07a52c627fa128beaa"
+    },
+    "policy/reliable/program_noop_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/program_noop_learner.py",
+      "sha256": "1e45700f2d37a12d0dbb8b65abb5cc4f46f0307026b042c7c3b68021f5a07106"
+    },
+    "policy/reliable/program_probe_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/program_probe_learner.py",
+      "sha256": "ff425886d100167968b7892ca83342bd18ce7fcdca006914f6973915e86aa6f3"
+    },
+    "policy/reliable/program_retained_frontier_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/program_retained_frontier_learner.py",
+      "sha256": "9c4f6b061ee286065a066d02eb0377386287f36db5f2e1069195e324bd430775"
+    },
+    "policy/reliable/program_stagnation_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/program_stagnation_learner.py",
+      "sha256": "83d77a2c2aa8ca0f86052c867aac947de191b2801007fbf35ed6ca6d04989eca"
+    },
+    "policy/reliable/program_unit_interface.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/program_unit_interface.py",
+      "sha256": "265e97c9f1715dcee731ebc8f4c67cba97d48c633769ef3a044391a384a93795"
+    },
+    "policy/reliable/program_unit_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/program_unit_learner.py",
+      "sha256": "619d48620f59e8bee08fa6db189540b1317ba46fafcf9025f94edf6ee01765ff"
+    },
+    "policy/reliable/program_unit_learner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/program_unit_learner_v3.py",
+      "sha256": "18c25f295c50faed69a880ed85ebe487d905165bcf59783c703c1cf83e84ed04"
+    },
+    "policy/reliable/pursuit_motion_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/pursuit_motion_v1.py",
+      "sha256": "1191ab6da96a5e0805a40281e9b70391d4cc894d2fbe6740ec316d410154aedc"
+    },
+    "policy/reliable/rail_peg_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rail_peg_inquiry_v2.py",
+      "sha256": "1d05fb8fa5a029892aa28454c798b7f31644527f245edc5fbc4f73cca4c12388"
+    },
+    "policy/reliable/rail_peg_model_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rail_peg_model_v1.py",
+      "sha256": "5d336a40bd711212b8b9ba12635ca9c98f526981d07c8fa60e88b7a1950dc4f6"
+    },
+    "policy/reliable/rare_actor_jump_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rare_actor_jump_geometry_v1.py",
+      "sha256": "67da14064d7f4be5c91d9fc483b2e17983c34e8ce9e5d6c4b0c18469b226c5fa"
+    },
+    "policy/reliable/rare_actor_jump_inquiry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rare_actor_jump_inquiry_v1.py",
+      "sha256": "7833cb4b34ed156351954c3ad5332177173362bec30bb151748d49435b00412c"
+    },
+    "policy/reliable/rectangle_contact_model_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rectangle_contact_model_v2.py",
+      "sha256": "64c738f78b419fb60d2bc7b85824673e43be343623a3cdd4df39bba6b8beb9e9"
+    },
+    "policy/reliable/rectangle_contact_model_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rectangle_contact_model_v3.py",
+      "sha256": "f4f2ef574c759c023f5145ba48f197baeed5c957650d04cb2261f578157de60b"
+    },
+    "policy/reliable/rectangle_observation_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rectangle_observation_v1.py",
+      "sha256": "f568d79ec899a7e3c952d66af7ee011b21d6f32e3349f7e605f8bfd844c1abe5"
+    },
+    "policy/reliable/rectangle_transfer_inquiry_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rectangle_transfer_inquiry_v4.py",
+      "sha256": "5cdf313f8b13a90e321885f91832e0ec6a16fa79d8c4b7301184925566e7a456"
+    },
+    "policy/reliable/rectangle_transfer_model_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rectangle_transfer_model_v1.py",
+      "sha256": "ad33ad3285b6ed4a5eda26373da79c3a7de4c8f961f6e025f6a19d70cfe3c7de"
+    },
+    "policy/reliable/rectangle_transfer_scene_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rectangle_transfer_scene_v2.py",
+      "sha256": "8e9f6b40ee75d9f3e9b372449c93ca76866b37776b245fd30c3a71d9c29d9c82"
+    },
+    "policy/reliable/reflection_assignment_inquiry_v18.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_assignment_inquiry_v18.py",
+      "sha256": "c0ad40fe340119d9a96b8229e6fc2956fddfc6eb24a906fd80fb531bcf87afe3"
+    },
+    "policy/reliable/reflection_assignment_inquiry_v9.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_assignment_inquiry_v9.py",
+      "sha256": "16dac6d4f2a4c2b5e3a16d24eb7a67c021b1632b87d5a080bbd1a7340bfc3ef8"
+    },
+    "policy/reliable/reflection_axes_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_axes_v2.py",
+      "sha256": "55a30ad89e0c012f624929cc18b2fec3ea7383fe8333ae3c3c66aa395ef27b04"
+    },
+    "policy/reliable/reflection_axes_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_axes_v4.py",
+      "sha256": "ce6645a44cb848230ef04dcef0fc8787af3ad8506b22cba4e65cce4240c72650"
+    },
+    "policy/reliable/reflection_coverage_goal_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_coverage_goal_v6.py",
+      "sha256": "4f681a2f7d0686d9fbfaea06fea1011c08f7e2e7e22be3ca32334f2b33b0b674"
+    },
+    "policy/reliable/reflection_goal_assignment_v13.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_goal_assignment_v13.py",
+      "sha256": "96f9704ec7d67851514e9833c57d1d4218a3b85213626b48f485de1ce42009cf"
+    },
+    "policy/reliable/reflection_goal_assignment_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_goal_assignment_v6.py",
+      "sha256": "fb2ec72ebbc5fefdb0d90953d773313aac620ddf29614cfd6d7195c35c09dd80"
+    },
+    "policy/reliable/reflection_learning_admission_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_learning_admission_v2.py",
+      "sha256": "63f31aaf63c3a4e7a1b615b256456861ef1abc8dcc724aab06e2e30cfce29032"
+    },
+    "policy/reliable/reflection_learning_admission_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_learning_admission_v3.py",
+      "sha256": "073358bd51073bea7eedf7f7f0966b2b0211d1a8e8806569909d941b36f04e2e"
+    },
+    "policy/reliable/reflection_learning_admission_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/reflection_learning_admission_v4.py",
+      "sha256": "d97c1a2e4637b8685abffb1f4764b9cd8567b622f6e67fccaf94f1b0e85999dc"
+    },
+    "policy/reliable/refuted_tool_word_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/refuted_tool_word_learner.py",
+      "sha256": "6aef5eee3e5338326a52ec7c87f268b3c3a10e99bae458c4ac1dbb3524c212fc"
+    },
+    "policy/reliable/repeated_tile_inquiry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/repeated_tile_inquiry_v1.py",
+      "sha256": "dd72fda69085d2c649ac8cf0cdb7015d26f3569a575f7debf73d63055d1986a7"
+    },
+    "policy/reliable/residual_tile_inquiry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/residual_tile_inquiry_v1.py",
+      "sha256": "09b0e5399d4d39c064ea6bdd3c6fdd5bd1955b11b982c622de6558a093dcecaf"
+    },
+    "policy/reliable/resumable_inquiry_stream.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/resumable_inquiry_stream.py",
+      "sha256": "d27d10e03f1974d092777d3bcfbcce032ddda4207f429b92291aaaac6f3855d7"
+    },
+    "policy/reliable/resumable_legacy_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/resumable_legacy_learner.py",
+      "sha256": "737a0ba6bdd4849581e908c5d346b3081a01b37e5915c5658304dd015cb36a74"
+    },
+    "policy/reliable/retained_body_memory_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retained_body_memory_v2.py",
+      "sha256": "66d4ad3a9a9960e589e75203f59f8b8dec579ee1235574042ab89bd9ce21203c"
+    },
+    "policy/reliable/retained_coverage_admission_v18.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retained_coverage_admission_v18.py",
+      "sha256": "5cf418c4a8da38847df821fa90aee35a85652ec5b37db94ecc694ed5d39ea75c"
+    },
+    "policy/reliable/retained_object_graph.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retained_object_graph.py",
+      "sha256": "80a83ee7b9c02670e5f53459b787f8ba5a32bef9dea1c38397c131eaaabe24dd"
+    },
+    "policy/reliable/retained_object_graph_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retained_object_graph_v2.py",
+      "sha256": "e1cc9443605944046235bde6372afebf4b7e5a4267ccc6c483a270510c772cce"
+    },
+    "policy/reliable/retained_object_graph_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retained_object_graph_v3.py",
+      "sha256": "1c5a898d0a697a6b0a0749faa2ef766ff2792aa04825d4aa1c6d067f3599d5cb"
+    },
+    "policy/reliable/retained_peg_scene_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retained_peg_scene_v1.py",
+      "sha256": "26b7f557dc1e17e2caa196f439043da728aaf46c140f9f2d0fe1b101dd645c0f"
+    },
+    "policy/reliable/retained_pose_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retained_pose_learner_v2.py",
+      "sha256": "69e4ef271f41fcb61e955d68d1599643d5570b4278b6b41fe4d30b58cc5b30a3"
+    },
+    "policy/reliable/retained_tool_word_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retained_tool_word_learner.py",
+      "sha256": "5c62848a4e1591f9885d131ad925e544eaa87cc71e4f9984213169e5fd2c9052"
+    },
+    "policy/reliable/retry_learning.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/retry_learning.py",
+      "sha256": "9e4fb4fad10b2f47f5262454a636eb2fa0e49152fe356b0748bb4c2bbac000f5"
+    },
+    "policy/reliable/revisable_connector_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/revisable_connector_learner_v2.py",
+      "sha256": "c1ed9d4d3ccc62004d937e947bcb2c9d8f7ded369d9606b11fa132d02c15ff5e"
+    },
+    "policy/reliable/rod_forest_inverse_goal_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rod_forest_inverse_goal_v2.py",
+      "sha256": "79b8e709740cd1e339a28c74e13c7c8476b8b79bee379a65632ccb5e0087e9e6"
+    },
+    "policy/reliable/rod_forest_model_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rod_forest_model_v6.py",
+      "sha256": "f8ed26be6b3b5aa4062e430fb44a8412909eef370cb4198d07e11a5f25804e3c"
+    },
+    "policy/reliable/rod_forest_scene_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rod_forest_scene_v2.py",
+      "sha256": "9e16011559a44f21bd1f8195cb5bc4881759ea302fd77e08412a3c8b66311fa9"
+    },
+    "policy/reliable/rod_forest_transfer_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rod_forest_transfer_v1.py",
+      "sha256": "8cee858aaa98623ae8695e0227d2397e9f347f898e3ee3fb8f1105086837703b"
+    },
+    "policy/reliable/role_filtered_reference_graph.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/role_filtered_reference_graph.py",
+      "sha256": "29c0e0f465346c32c5ddbd2ffc411357bd7289a4bf35496a0e6676cb2876ffa9"
+    },
+    "policy/reliable/role_validated_graph_handoff.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/role_validated_graph_handoff.py",
+      "sha256": "e6d9c9eca644974eabf006f98590cb1c3541a9535117e83eaa8ec87e36c6f75d"
+    },
+    "policy/reliable/role_validated_reflective_graph.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/role_validated_reflective_graph.py",
+      "sha256": "46ad4607b205b3e30fcbc0287712d236a963f32cacb1ee5f1484f594e15ad1c5"
+    },
+    "policy/reliable/rope_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_admission_v1.py",
+      "sha256": "f8112573480f8bdb144346281d497bbecfac177c9154bb7c0bc2128a4ce2714a"
+    },
+    "policy/reliable/rope_motion_hypotheses_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_motion_hypotheses_v2.py",
+      "sha256": "811eea310caf52c6d3d859c2aee72bdf7e65e2079f023ce33f87158d6af05557"
+    },
+    "policy/reliable/rope_physics_model_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_physics_model_v2.py",
+      "sha256": "54ee0e4c20f4b43ce1ac46cc1c9b34369d3558b2753c9af3bab25e4ef8192aaf"
+    },
+    "policy/reliable/rope_physics_model_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_physics_model_v4.py",
+      "sha256": "5da8d1a64b0aa14cb2aaef375d240fbd1499a0059e39231a8201fba4f19bc89f"
+    },
+    "policy/reliable/rope_physics_model_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_physics_model_v6.py",
+      "sha256": "70a25df57af60ce06b716253c7598fa0bae61fc445ddfd1fe1500fe07422d912"
+    },
+    "policy/reliable/rope_rail_composer_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_rail_composer_v5.py",
+      "sha256": "792934d71f4eb2c15c0acb5e53a5e4127cbe5ea53e25c34ffe37ed90df30df69"
+    },
+    "policy/reliable/rope_rail_planning_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_rail_planning_v5.py",
+      "sha256": "0902a70504e055d14699282794e922aa5ec4843e70de553a9a33fe959ab4cc81"
+    },
+    "policy/reliable/rope_sequence_inquiry_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_sequence_inquiry_v5.py",
+      "sha256": "5e2d5e0074e23b8cf44211b04636e34902668602cdd90c261b455e625ea518ef"
+    },
+    "policy/reliable/rope_visible_parts_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/rope_visible_parts_v1.py",
+      "sha256": "90e0bbd2eb4f770f441cbb10a56722049b858d5662f91e01d1b74505596f4236"
+    },
+    "policy/reliable/segmented_correspondence_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/segmented_correspondence_learner_v1.py",
+      "sha256": "da29e7171367e9e925bc1be3e81054a4f165f5c7804650f3fdfe039e2954539c"
+    },
+    "policy/reliable/segmented_geometric_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/segmented_geometric_learner_v1.py",
+      "sha256": "3eabcd76ae84cc920e3e1cd61e984d54ca88510d5d6fbd518109b0df43fcc40b"
+    },
+    "policy/reliable/segmented_local_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/segmented_local_learner_v1.py",
+      "sha256": "2177cc5b027baa82ac663ea359e3fcf298b6f196933dc198aa163e8f6ab79df3"
+    },
+    "policy/reliable/segmented_track_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/segmented_track_geometry_v1.py",
+      "sha256": "7ad32dddf46a3926a5ef533c493136a7a3562c814f132147214d7c01d97a1cc5"
+    },
+    "policy/reliable/selectable_context_retry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_context_retry_v2.py",
+      "sha256": "ac76813af37e35aa06543039762f236dc8f60aa9ab7039e6b9a3341a15f92751"
+    },
+    "policy/reliable/selectable_controller_handoff_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_controller_handoff_v1.py",
+      "sha256": "4592201266eedd5da8a4f320ca20b0b61f1c1408d7fab85890bad08c70aeb5ef"
+    },
+    "policy/reliable/selectable_edge_crop_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_edge_crop_v1.py",
+      "sha256": "d0f9646781bbb5fd7a2a77becd7004969d2f2a852db7f9f6244009981e4fc121"
+    },
+    "policy/reliable/selectable_fragmentary_goal_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_fragmentary_goal_v1.py",
+      "sha256": "7f3095be2d343caa2ad9bdec30761bba85de6dbdf6f28638b36fe7dd861c2e69"
+    },
+    "policy/reliable/selectable_fragmentary_goal_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_fragmentary_goal_v2.py",
+      "sha256": "4d40ef953c9c024d57e640df1032423cc6e41bc112dc437df5e917183260a297"
+    },
+    "policy/reliable/selectable_multi_object_learner_v13.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v13.py",
+      "sha256": "6dde5a9ae05a1b45b8696005170772dacff57acdc54716beaf2b948c53019ce3"
+    },
+    "policy/reliable/selectable_multi_object_learner_v14.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v14.py",
+      "sha256": "cfc5ec8f1e204290c7130d8961248520487f0d8a1be0a7b9f73035acd7d0352d"
+    },
+    "policy/reliable/selectable_multi_object_learner_v15.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v15.py",
+      "sha256": "60b3512e062ad9b7fccfde00a6e3f778ec2fdf211abe4e94417c2fca868b0447"
+    },
+    "policy/reliable/selectable_multi_object_learner_v16.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v16.py",
+      "sha256": "ecdaf7412f640603c8cc32b11a461b734c251ed3e2723bfdebdde05eff3ee451"
+    },
+    "policy/reliable/selectable_multi_object_learner_v17.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v17.py",
+      "sha256": "86ab1e706f0ead171eb4ebf991af034c3ecd9060b2f9552e70cc31d5b3f89bef"
+    },
+    "policy/reliable/selectable_multi_object_learner_v18.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v18.py",
+      "sha256": "e2ed6e0a78666cb950326816ee3e0c36ff3c0902b7e376713a1307d5cfa8c34e"
+    },
+    "policy/reliable/selectable_multi_object_learner_v19.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v19.py",
+      "sha256": "a44fc69c338bdbf131506c4288549e4ae9b7de23973efa81578a64c5e37955c2"
+    },
+    "policy/reliable/selectable_multi_object_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v2.py",
+      "sha256": "6bc3f22d9f1ccf09a51a2b422e60de6b5be4cbc7276e3e922e5874129e7070a0"
+    },
+    "policy/reliable/selectable_multi_object_learner_v20.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v20.py",
+      "sha256": "28b2b0b674dada59c74f88b79116d29835a80f4eff733d77b7b2de5cea1144f0"
+    },
+    "policy/reliable/selectable_multi_object_learner_v21.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v21.py",
+      "sha256": "5b8d4875387cb3defdbff70c91739381ed578fb4e6618376ef2c3389c4d7937a"
+    },
+    "policy/reliable/selectable_multi_object_learner_v22.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v22.py",
+      "sha256": "e35308e743da148c1d3d611bdf91b60124fd556cdb9e390d94d30d89efbbd8cd"
+    },
+    "policy/reliable/selectable_multi_object_learner_v23.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v23.py",
+      "sha256": "cecd86c8d641af06bec8cad211a1a0225ac56682ae4f72d7c98864dad6fa4a8e"
+    },
+    "policy/reliable/selectable_multi_object_learner_v24.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_object_learner_v24.py",
+      "sha256": "812e6ebafb8c879ec2805c76236a49a990babc962e0171e4f93403576793672f"
+    },
+    "policy/reliable/selectable_multi_passive_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_passive_inquiry_v2.py",
+      "sha256": "dd7e35b1f4a3072d6f88dc2915d57f6887ab5751e42615ff3206f8be209789d1"
+    },
+    "policy/reliable/selectable_multi_passive_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_passive_inquiry_v3.py",
+      "sha256": "4bf3c3938a00776ed26a1eafe12cabbcff1fc603a29a6afe38822e1359040aa2"
+    },
+    "policy/reliable/selectable_multi_passive_inquiry_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_multi_passive_inquiry_v4.py",
+      "sha256": "14a1292665afff87906cc2e62a923c5992807e36f51631b7e7a7c8a6c0008213"
+    },
+    "policy/reliable/selectable_passive_contact_learner_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_passive_contact_learner_v1.py",
+      "sha256": "29db9af7a67d3ef4125b320759355c3fe84415ed326cc36f0d8c211dcabc97dc"
+    },
+    "policy/reliable/selectable_passive_contact_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_passive_contact_learner_v2.py",
+      "sha256": "bd40b403e29d353028d8992d91d4ff32fada02ba91ae72a433298abbf1e46693"
+    },
+    "policy/reliable/selectable_passive_contact_learner_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_passive_contact_learner_v3.py",
+      "sha256": "0c48c210964b3544b7224fd82abcaf93de61710d33096648e56b2752a27eef0e"
+    },
+    "policy/reliable/selectable_passive_planner_v7.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_passive_planner_v7.py",
+      "sha256": "f345d8bbdb3f6a53d8d9120e594828187dd6d60de63465d526f17b50c4e94348"
+    },
+    "policy/reliable/selectable_passive_planner_v8.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_passive_planner_v8.py",
+      "sha256": "35499377d85c2cd9dc84a24b4ead2b0a0eda280f4f84861015a4436c72f49dae"
+    },
+    "policy/reliable/selectable_passive_planner_v9.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_passive_planner_v9.py",
+      "sha256": "3464b2fe59dbc3ee016858bf50cda289b129a72055d6421b242798f377260b29"
+    },
+    "policy/reliable/selectable_rect_core_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_rect_core_v1.py",
+      "sha256": "e8bf5bb6a24388c81bed7649f04151f180cc578958d3e4241a65d57f1f706ba7"
+    },
+    "policy/reliable/selectable_rect_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_rect_geometry_v1.py",
+      "sha256": "96668a3fc3959a192d7e9780f860c11e1509d050eca29cb0e5b6eef19acde39e"
+    },
+    "policy/reliable/selectable_rect_identity_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_rect_identity_v2.py",
+      "sha256": "10cdb038de5b82b154bcf78902010325ce43c16974e99495f6fef4b92a55685d"
+    },
+    "policy/reliable/selectable_rect_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_rect_inquiry_v2.py",
+      "sha256": "2783ffa0ef6e34ab325f49fe97b401e69142fd8520640d9f43daa43c4d31608f"
+    },
+    "policy/reliable/selectable_rect_push_core_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_rect_push_core_v2.py",
+      "sha256": "17a36e18dc77f66d55d482628a6cb3c5bf1dcab18b16839ac563d5f5b02267e0"
+    },
+    "policy/reliable/selectable_ring_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_ring_geometry_v1.py",
+      "sha256": "bf56193123adfbba223b8a2d04ae843bfbd312a7fe8d64a013f5d47a7200d353"
+    },
+    "policy/reliable/selectable_temporal_recovery_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/selectable_temporal_recovery_v4.py",
+      "sha256": "c32ae4eabdf5e4cb57cbedc73490ccf99af89b3a4d02623f1f801016f22300dc"
+    },
+    "policy/reliable/shape_episode_transfer_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/shape_episode_transfer_v1.py",
+      "sha256": "7554a968707ed0804e58d71377b93e261609a9ace8809718c6bd8de7fbf27f84"
+    },
+    "policy/reliable/shape_footprint_planner_v6.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/shape_footprint_planner_v6.py",
+      "sha256": "b9a653e9e94a0dbad44b93dc49970c4b10b944589c476362083887582dccd92d"
+    },
+    "policy/reliable/shape_site_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/shape_site_inquiry_v3.py",
+      "sha256": "e9fed3ff49498f4dde8b24a1d0f332e10f104c8546e9961f32b6ddc275f96baa"
+    },
+    "policy/reliable/shape_site_observer_portable_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/shape_site_observer_portable_v1.py",
+      "sha256": "be895653e9822a4c6187a3a660b2d61d71f871699208e191afbdd9fd89def703"
+    },
+    "policy/reliable/snapshot_marker_pose.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/snapshot_marker_pose.py",
+      "sha256": "8552b42b054ff64d13d9a972a9721bb033e838244e8f55e9cec0b2d4227e9b53"
+    },
+    "policy/reliable/snapshot_pose_hypotheses.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/snapshot_pose_hypotheses.py",
+      "sha256": "d80a76ae12fa7e960a28197611eebbc2e84d05dca8125b3c480dcc337dc6a5bb"
+    },
+    "policy/reliable/spatial_prior_v54.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/spatial_prior_v54.py",
+      "sha256": "1bb97ece215b0b54a9b04249bfb5d5c38523d3d88dc93a716291b011ed15c10c"
+    },
+    "policy/reliable/stable_noop_tool_handoff.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/stable_noop_tool_handoff.py",
+      "sha256": "208ad930f310f6207e484afedebd7eede92ce47259416d0b68b2517a5ba76cc6"
+    },
+    "policy/reliable/stencil_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/stencil_admission_v1.py",
+      "sha256": "9bee0e95296679be6c5c085d1ad9f3ab7d889ee6c0efdfd781fcefb5360d6086"
+    },
+    "policy/reliable/stencil_composition_inquiry_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/stencil_composition_inquiry_v4.py",
+      "sha256": "a9208200186351134f11fc26da578a536123af783b57a7d1c8b37f33834c9c5e"
+    },
+    "policy/reliable/stencil_goal_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/stencil_goal_inquiry_v3.py",
+      "sha256": "17d2bc64c9250b782dc893b6a2197bc0ef4c6404e680059c14b399037f8f8908"
+    },
+    "policy/reliable/structured_interaction_probe_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/structured_interaction_probe_v1.py",
+      "sha256": "846d29df814821a7e435bfc7d42552338f6569fa0798f0c9739f7dce25893e49"
+    },
+    "policy/reliable/supported_parallel_geometry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/supported_parallel_geometry_v1.py",
+      "sha256": "1f15e96a39386c5037fa21d35dc12aa8966ce1fcfccea9a5ae71f36aa71686b1"
+    },
+    "policy/reliable/switch_bridge_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/switch_bridge_admission_v1.py",
+      "sha256": "a1fbe65efc6fe4de802e5c89bfd011b9032b7ef29627365f6d3a293632d5cba1"
+    },
+    "policy/reliable/switch_bridge_admission_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/switch_bridge_admission_v2.py",
+      "sha256": "6893a275912e84ce4bd580f08c1789923de38c95968a08dc5ae1b573767e59c2"
+    },
+    "policy/reliable/switch_bridge_admission_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/switch_bridge_admission_v4.py",
+      "sha256": "c897817add9efb7d3d6154108168393a8bfb3c2a8feb111f67cbefde6646957c"
+    },
+    "policy/reliable/switch_bridge_inquiry_v14.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/switch_bridge_inquiry_v14.py",
+      "sha256": "6047a2927b91eb7f88622f1cf9ad13ffd19b45eac15db7152c58c276b6bb2b60"
+    },
+    "policy/reliable/switch_bridge_inquiry_v21.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/switch_bridge_inquiry_v21.py",
+      "sha256": "2c601d1c578579d5fa42c492b5a9281ee2be251a5071c4d0fca4945c5d519f8d"
+    },
+    "policy/reliable/switch_bridge_inquiry_v25.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/switch_bridge_inquiry_v25.py",
+      "sha256": "823440eb8d28b458d5353e9c6ce72e5089e0c4a889123df006ec3265e47d4996"
+    },
+    "policy/reliable/temporal_effect_memory.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/temporal_effect_memory.py",
+      "sha256": "a3f838ac11ae0a9c9e5f0f2a862dac2bf5a0d6f5e6b8af061804d9ce181cbc0b"
+    },
+    "policy/reliable/temporal_effect_memory_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/temporal_effect_memory_v3.py",
+      "sha256": "ddfffb06e49d1b2cd76245f0dbd786b8c9c7ea44dfc547f386f27df7e44995bd"
+    },
+    "policy/reliable/temporal_effect_memory_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/temporal_effect_memory_v4.py",
+      "sha256": "ae3e37c50957eafc66f05d4d52abd1ddbd5ed1f99a99c4375f43e8230043af1b"
+    },
+    "policy/reliable/temporal_planner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/temporal_planner.py",
+      "sha256": "9079bd7e2797759e1de44d27b92ef799ce2072aeb22788dd9f0f5c368898e7be"
+    },
+    "policy/reliable/temporal_planner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/temporal_planner_v2.py",
+      "sha256": "abe5786bdc9d2431c28e5ca737709e373952bc0d8238baa72b28f211ab15580e"
+    },
+    "policy/reliable/temporal_portal_rendezvous_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/temporal_portal_rendezvous_v1.py",
+      "sha256": "ca8b5d6c28736d5d78b5c2442b9900d6f2d6520e29e1c96f7acb8ba1f4cb680c"
+    },
+    "policy/reliable/translation_memory.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/translation_memory.py",
+      "sha256": "b2c87ac7933a7c04ad6952a665ec12767d4767d87122b163316b20de1fcd9add"
+    },
+    "policy/reliable/typed_peg_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/typed_peg_inquiry_v2.py",
+      "sha256": "3305720d49f891d4bf60656b80d8f71de567ec4ec91e2ced057b2d0631eb5e8a"
+    },
+    "policy/reliable/typed_peg_planning_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/typed_peg_planning_v1.py",
+      "sha256": "79e60407a6736d773f007f7fd31f4312c7a33947566688979ebdcf5d5fc6e7f8"
+    },
+    "policy/reliable/typed_peg_planning_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/typed_peg_planning_v2.py",
+      "sha256": "0f88f84d2f26a1463815c4abb40b3d687a645e1a3c1f74ecc19a78310feceb87"
+    },
+    "policy/reliable/typed_viewport_peg_learning_v4.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/typed_viewport_peg_learning_v4.py",
+      "sha256": "b0d79defefe4bb0d651ee6619057508dce0c337e2b60dff712fae99706fbd967"
+    },
+    "policy/reliable/unknown_lattice_inquiry_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/unknown_lattice_inquiry_v1.py",
+      "sha256": "fd50436daa37c7de6bc2ca2d44929b456f9095f0f4ae04c59a10fd235378e848"
+    },
+    "policy/reliable/viewport_peg_learning_v10.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/viewport_peg_learning_v10.py",
+      "sha256": "0ffbaf4fe01f6a8fe6bb084dd488d4ee5ffbd2d9c887476aa80a97ae773df5c3"
+    },
+    "policy/reliable/viewport_peg_learning_v5.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/viewport_peg_learning_v5.py",
+      "sha256": "920781dc6b54aad5adc002df69f988577e9b33581cd0f2965e0ade4f02326bc2"
+    },
+    "policy/reliable/viewport_peg_learning_v8.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/viewport_peg_learning_v8.py",
+      "sha256": "9b1d3333a7021cf6244ed7638118b3bafd0d619c541a392f213ea73cfaadebf8"
+    },
+    "policy/reliable/visible_components_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/visible_components_v1.py",
+      "sha256": "8c6b3ae93e1c6088373a879a47cb94592fd5389cfd1e81dce3a847d2dee486d0"
+    },
+    "policy/reliable/visible_goal_memory_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/visible_goal_memory_v1.py",
+      "sha256": "b18739c0f7a7b8850931924231318a907e2286a81a6b3ccdb5a6c0d86d7de2bf"
+    },
+    "policy/reliable/visible_passive_components_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/visible_passive_components_v1.py",
+      "sha256": "e795c3fc05598fc11fe7544ddf2163674ac423dfd072b7d00637e86e442e1c58"
+    },
+    "policy/reliable/visual_transform_learner.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/visual_transform_learner.py",
+      "sha256": "41490b70d10a9117c5d651edea8c1796d9c82285978aee3af513a833e021373f"
+    },
+    "policy/reliable/waypoint_action_learner_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/waypoint_action_learner_v2.py",
+      "sha256": "38cf77d11a3380bc85ab6cfcfbdbb0248f10bd8eb749fbb71410126c01716282"
+    },
+    "policy/reliable/waypoint_admission_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/waypoint_admission_v1.py",
+      "sha256": "6532a920e10ff6448b91d87d5768b75753d059a083108979574fb3eaa2304793"
+    },
+    "policy/reliable/waypoint_failure_recovery_v1.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/waypoint_failure_recovery_v1.py",
+      "sha256": "911ad4726fd4c86bcb8a61ef9a868a63a5847806da2527b1e1fb5a7cf274e82b"
+    },
+    "policy/reliable/waypoint_measured_backtracking_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/waypoint_measured_backtracking_v3.py",
+      "sha256": "0161d68c39df945e3ca576bd1783363bda27aafbba92769f8cb0e8c6b30ffa95"
+    },
+    "policy/reliable/waypoint_measured_range_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/waypoint_measured_range_v3.py",
+      "sha256": "e7cf56bb52c67e7b2352326f1867b12943fc4fe51d85d1c34017b50f5bbd6cd0"
+    },
+    "policy/reliable/waypoint_range_inquiry_v2.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/waypoint_range_inquiry_v2.py",
+      "sha256": "76a9963b019435efed99eea7304463e7a7ed33165d92f856638310613f98a028"
+    },
+    "policy/reliable/waypoint_recursive_inquiry_v15.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/waypoint_recursive_inquiry_v15.py",
+      "sha256": "f9660aa6f3bc2833e03be61df705c71cbe127b3c4dcf6ab62ea6f30cb0a87182"
+    },
+    "policy/reliable/waypoint_scene_inquiry_v3.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/reliable/waypoint_scene_inquiry_v3.py",
+      "sha256": "613984e546a38c66b286c19bb4084bebf4a810bfc0549935cc4f251d5b47a811"
+    },
+    "policy/student.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/student.py",
+      "sha256": "b5191163f5e1c5e16c403ed7e8b729fb33e6d6d5ba18302fa53b0246a92b62c9"
+    },
+    "policy/v18_student.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/v18_student.py",
+      "sha256": "e9ecaec99a07f1c30f0db729436c4a8f3fa0aaef3f01942cc104dc3e0b2c0da4"
+    },
+    "policy/v5_student.py": {
+      "source": "outputs/reliable-arc3-hybrid-v138/v5_student.py",
+      "sha256": "a0f5f6475192ca99aa3dc1195f6dee2beccd081efff42df4cfdc6b8d421bda03"
+    },
+    "client.py": {
+      "source": "work/kaggle_candidate_client_v3.py",
+      "sha256": "fa0bbc9fc546c6d0d395b511d8458a317b6839295d4a311e972107a20580563b"
+    }
+  },
+  "third_party_imports": [
+    "argparse",
+    "builtins",
+    "collections",
+    "copy",
+    "ctypes",
+    "dataclasses",
+    "fractions",
+    "functools",
+    "gc",
+    "hashlib",
+    "heapq",
+    "io",
+    "itertools",
+    "json",
+    "math",
+    "numpy",
+    "os",
+    "pathlib",
+    "pickle",
+    "random",
+    "resource",
+    "scipy",
+    "socket",
+    "sys",
+    "torch",
+    "types"
+  ],
+  "optional_inactive_arm_imports": [
+    "torch"
+  ],
+  "recorded_responses_included": false,
+  "game_implementations_included": false,
+  "weights_or_credentials_included": false,
+  "local_score_verified": false,
+  "kaggle_verified": false,
+  "source_release_license": "Pending author choice and dependency license inventory before public release",
+  "framework_reference": "https://github.com/arcprize/ARC-AGI-3-Kaggle-Starter/tree/eeb1535404f321d280a8f9194bbc1d7aca5f05fc",
+  "status": "frozen_for_complete_local_validation_kaggle_pending"
+}

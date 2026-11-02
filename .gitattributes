@@ -1,0 +1,2 @@
+# Preserve frozen source, archive and notebook bytes on every checkout.
+* -text

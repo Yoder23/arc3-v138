@@ -1,0 +1,37 @@
+{
+  "scope": "Exact locally tested Windows runtime. Kaggle/Linux and official hardware are unverified.",
+  "coordinator": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable_sha256": "5640e9be2fd33d05a1a9ae1228e2354609a69ab831605995ec4e2bd6da8fff5e"
+  },
+  "policy_python": {
+    "python": "3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]",
+    "executable_sha256": "94a83686261e9364cf3386b61a01a9f70936e8547da8962d16f1f850226b8954"
+  },
+  "policy_packages": {
+    "numpy": {
+      "version": "2.2.6",
+      "distribution_manifest_sha256": {
+        "numpy-2.2.6.dist-info/METADATA": "229f3544b02805e0f6a12030e155d8a45fd3a4100b3291574175e6a76f20e1e1",
+        "numpy-2.2.6.dist-info/RECORD": "a204bbbf199a1de259d62113a51fa108a3a4f87bcd0a0ce779cda3902aa03265",
+        "numpy-2.2.6.dist-info/WHEEL": "d67213f1b394ddd044b4ed4e1cd530d4f07bb35ec91fdb4043ddd22ea53d24d3"
+      }
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "distribution_manifest_sha256": {
+        "scipy-1.15.3.dist-info/METADATA": "191610381f06190f11ec2c5cd46f1a7833665d8386d3fe8a710c07ef65acdfd4",
+        "scipy-1.15.3.dist-info/RECORD": "de4640730d6ec6b82df5d7df056d3522f99286d43340aa82d5653e0b366bf26d",
+        "scipy-1.15.3.dist-info/WHEEL": "d67213f1b394ddd044b4ed4e1cd530d4f07bb35ec91fdb4043ddd22ea53d24d3"
+      }
+    }
+  },
+  "sdk_distribution_metadata": {
+    "arc_agi-0.9.9.dist-info/METADATA": "7adb8d9d26b1fd3f5e5cd68d46188fca23b1236d92cc5c0a94963510ce4aeb98",
+    "arcengine-0.9.3.dist-info/METADATA": "daa4cb74147139e896b7ca4953b2fc5caa3b375b0bc3b89c073db1efa98efd14"
+  },
+  "runtime_report_sha256": "94c226c36121000aadc44d8b74516f97dc1fa63f8f0c5daaa7ffd733b37a0ce4",
+  "torch_used": false,
+  "dependencies_included": false,
+  "game_implementations_included": false
+}

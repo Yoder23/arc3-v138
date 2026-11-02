@@ -1,0 +1,11 @@
+V138 notebook transport correction, 2026-11-02
+
+The previous notebook was 1,134,025 bytes and Kaggle rejected its commit for exceeding the kernel source size limit.
+This notebook is 959,128 bytes and uses Python standard-library LZMA plus base85.
+The decoded policy-package.zip is byte-for-byte identical to the frozen V138 ZIP. No policy source, gameplay logic, retained knowledge, or gateway control flow changed.
+Original notebook SHA256: e29cb39ca485a5d0efcaf6f63b3122eaeabfbe80f0079aabb383e1def78087a3
+Compact notebook SHA256: bda7e4e4d87f0ce5ebb315d794e4c0e99f2738afaddb2eb5483f8da101199b94
+Unchanged policy ZIP SHA256: b992030ca9dad1998af5f7612f196fa68b58b08c3c40a87411d1c1cbc81623cb
+
+The research report remains a historical, unchanged record; its notebook hash refers to the original wrapper. Use the compact notebook hash above for this delivery.
+Local public score remains 76.99252294322464/100 from the prior exact-policy validation. This packaging fix does not establish a Kaggle score or leaderboard rank.

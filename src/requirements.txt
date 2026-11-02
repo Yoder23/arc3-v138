@@ -1,0 +1,4 @@
+arc-agi>=0.9.6
+python-dotenv
+numpy
+scipy

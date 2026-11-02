@@ -1,0 +1,29 @@
+{
+  "local_score": 76.99252294322464,
+  "levels": 153,
+  "total_levels": 183,
+  "wins": 16,
+  "games": 25,
+  "actual_environment_actions": 7585,
+  "cached_responses": 0,
+  "kaggle_verified": false,
+  "unverified": [
+    "Kaggle Linux initialization and offline dependencies",
+    "Official hardware and gateway execution",
+    "Hidden evaluation performance"
+  ],
+  "version": "V138",
+  "scope": "Adaptive local public evaluation; not a hidden or Kaggle result.",
+  "notebook_sha256": "bda7e4e4d87f0ce5ebb315d794e4c0e99f2738afaddb2eb5483f8da101199b94",
+  "payload_sha256": "b992030ca9dad1998af5f7612f196fa68b58b08c3c40a87411d1c1cbc81623cb",
+  "validated_source_report_sha256": "137655f56da5a714408e77c8429baae1025b511df4133499e1bbdc0874348774",
+  "packaging_deadline_eastern": "2026-11-02T11:13:36-05:00",
+  "submission_performed": false,
+  "packaging_revision": "compact-v1",
+  "original_notebook_sha256": "e29cb39ca485a5d0efcaf6f63b3122eaeabfbe80f0079aabb383e1def78087a3",
+  "policy_zip_byte_identical": true,
+  "notebook_bytes": 959128,
+  "notebook_source_bytes": 958369,
+  "size_limit_checked_bytes": 1000000,
+  "encoding": "stdlib LZMA + base85"
+}
